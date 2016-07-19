@@ -41,7 +41,7 @@ Here are direct download links to images.
 Latest version: v1.2  
 [https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip](EZ-wifibroadcast-1.2.zip)
 
-Other versions: v1.0  
+Previous versions: v1.0  
 [https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip](ez-wifibroadcast-1.0.zip)
 
 Here's a (long) thread with more infos and experiences with Wifibroadcast:

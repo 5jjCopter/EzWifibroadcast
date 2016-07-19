@@ -2,7 +2,7 @@
 
 ### Installation / Setup
 - Download the image and unzip it
-- Write it to two (minimum 1GB) SD Cards. See instructions on [https://www.raspberrypi.org/documentation/installation/installing-images/](this page) on how to do it depending if you are using Linux, Mac or Windows.
+- Write it to two (minimum 1GB) SD Cards. See instructions on [this page] https://www.raspberrypi.org/documentation/installation/installing-images/)
 - Insert each SD card into each Raspberry Pis and boot them up.
 
 
@@ -61,10 +61,9 @@ On the other hand, if everybody gets the same cards, we'll never find out which 
 Here are direct download links to images.
 
 Latest version: v1.2  
-[https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip](EZ-wifibroadcast-1.2.zip)
+(https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip)[EZ-wifibroadcast-1.2.zip]
 
 Previous versions: v1.0  
-[https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip](ez-wifibroadcast-1.0.zip)
+(https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip)[ez-wifibroadcast-1.0.zip]
 
-Here's a (long) thread with more infos and experiences with Wifibroadcast:
-http://www.rcgroups.com/forums/showthread.php?t=2454052
+Here's a (http://www.rcgroups.com/forums/showthread.php?t=2454052)[long thread] with more infos and experiences with Wifibroadcast:

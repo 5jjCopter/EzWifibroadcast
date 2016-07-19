@@ -1,5 +1,27 @@
 ## Welcome to the EZ-WifiBroadcast wiki!  
 
+### Installation / Setup
+- Download the image and unzip it
+- Write it to two (minimum 1GB) SD Cards. See instructions on [https://www.raspberrypi.org/documentation/installation/installing-images/](this page) on how to do it depending if you are using Linux, Mac or Windows.
+- Insert each SD card into each Raspberry Pis and boot them up.
+
+
+
+
+Configuration
+-------------
+- Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone) and edit wifibroadcast.txt
+
+
+
+
+Ground Recording
+----------------
+- USB Stick must contain a folder called "video"
+- Plug USB stick to ground Pi before powering on
+- Before disconnecting power, disconnect all USB sticks and wait a few seconds for the recording to be stopped, then power off
+
+
 ###Features
 - Supports all Raspberry Pi models including Pi3, Pi Zero and also Odroid-W
 - Supports the new Pi V2 cam

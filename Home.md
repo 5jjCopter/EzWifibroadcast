@@ -4,7 +4,7 @@
 
 
 
-#Features
+###Features
 - Supports all Raspberry Pi models including Pi3, Pi Zero and also Odroid-W
 - Supports the new Pi V2 cam
 - Configuration can be done from Windows, no Linux knowledge required

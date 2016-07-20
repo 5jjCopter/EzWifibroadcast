@@ -1,2 +1,2 @@
-Here are images of the different hardware modules (courtesy of Rodizio)
+These are images of different hardware modules (Submitted by @Rodizio)
 

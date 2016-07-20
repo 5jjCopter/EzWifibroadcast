@@ -1,4 +1,5 @@
 ## Welcome to the EZ-WifiBroadcast wiki!  
+Read through this page before you start asking questions on the forum. 
 
 ### Download
 These are direct download links to images.  
@@ -58,6 +59,22 @@ This ones also looks promising for high power needs:
 - Alfa AWUS052NH (2.4Ghz/5Ghz, Diversity, high power, RT3572 chipset)
 
 On the other hand, if everybody gets the same cards, we'll never find out which other ones work. There are also very small and lightweight RT5370 cards available in china shops for under 4$. Aliexpress for example has a lot of cheap wifi cards in general. It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
+
+###Tested wifi dongles
+AWUS036NH, AWUS036NHA, AWUS051NH, TL-WN722N, TL-WN822N V2, CSL 300Mbit stick
+
+(My favourites for 2.4Ghz are TL-WN722N and AWUS036NHA at the moment, for 5Ghz the AWUS051NH. The more I test with the CSL 300Mbit dongles, the less I like them, not much TXPower, unclean signal when TXPower raised, they seem to have problems with high power TX cards when used as an RX card (bad blocks when being to near) and somehow there seem to be more badblocks compared to the 722N when used on a wifi channel with other wifi networks.)
+
+###Tested Raspberry Pi Hardware
+- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
+- Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
+
+### Notes
+
+TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (720p, 4.5Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). I'd recommend a Pi2 or 3 as a TX because of this, it has enough headroom to not be worried about CPU usage at all.
+
+
+RX: Raspberry Pi1 and Pi Zero have just about enough CPU power for one RX dongle, that's it. Multiple RX dongles, OSD, and/or ground-recording to memory stick will not work reliably. Get atleast a Pi2.
 
 ### References
 - Discussion forum on rcgroups for this project [can be found here](http://www.rcgroups.com/forums/showthread.php?t=2664393)

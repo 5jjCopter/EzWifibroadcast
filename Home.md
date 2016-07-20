@@ -60,4 +60,5 @@ This ones also looks promising for high power needs:
 On the other hand, if everybody gets the same cards, we'll never find out which other ones work. There are also very small and lightweight RT5370 cards available in china shops for under 4$. Aliexpress for example has a lot of cheap wifi cards in general. It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
 
 ### References
-Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences with Wifibroadcast:
+- Discussion forum on rcgroups for this project [can be found here](http://www.rcgroups.com/forums/showthread.php?t=2664393)
+- Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences with befinitivs Wifibroadcast image.  

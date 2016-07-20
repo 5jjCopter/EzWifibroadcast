@@ -1,20 +1,24 @@
 ## Welcome to the EZ-WifiBroadcast wiki!  
 
+### Download
+These are direct download links to images.
+Latest version: v1.2  
+[EZ-wifibroadcast-1.2.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip)
+Previous versions: v1.0  
+[ez-wifibroadcast-1.0.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip)
+
+
 ### Installation / Setup
 - Download the image and unzip it
 - Write it onto two (minimum 1GB) SD Cards. One for Transmitter part and another for Receiver part. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img file on SD card.
 - Insert each SD card into each Raspberry Pi and boot them up.
 
 
-Configuration
--------------
+###Configuration
 - Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone) and edit wifibroadcast.txt
 
 
-
-
-Ground Recording
-----------------
+###Ground Recording
 - USB Stick must contain a folder called "video"
 - Plug USB stick to ground Pi before powering on
 - Before disconnecting power, disconnect all USB sticks and wait a few seconds for the recording to be stopped, then power off
@@ -55,13 +59,5 @@ This ones also looks promising for high power needs:
 
 On the other hand, if everybody gets the same cards, we'll never find out which other ones work. There are also very small and lightweight RT5370 cards available in china shops for under 4$. Aliexpress for example has a lot of cheap wifi cards in general. It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
 
-### Download
-Here are direct download links to images.
-
-Latest version: v1.2  
-[EZ-wifibroadcast-1.2.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip)
-
-Previous versions: v1.0  
-[ez-wifibroadcast-1.0.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip)
 
 Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences with Wifibroadcast:

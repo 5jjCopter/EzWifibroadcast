@@ -5,7 +5,7 @@
 - Write it to two (minimum 1GB) SD Cards. See instructions on [this page] https://www.raspberrypi.org/documentation/installation/installing-images/)
 - Insert each SD card into each Raspberry Pis and boot them up.
 
-
+[dfdfdf](www.google.com)
 
 
 Configuration

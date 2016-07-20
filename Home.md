@@ -40,7 +40,7 @@ Previous versions: v1.0 [ez-wifibroadcast-1.0.zip](https://googledrive.com/host/
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 
 ### Wifi cards and doungles
-There is a list of card and doungles on [this page](https://github.com/bortek/EZ-WifiBroadcast/wiki/Lis-of-Wifi-cards-and-doungles)
+There is a list of Wifi cards and doungles on [this Wiki page](https://github.com/bortek/EZ-WifiBroadcast/wiki/Lis-of-Wifi-cards-and-doungles)
 
 ###Tested Raspberry Pi Hardware
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W

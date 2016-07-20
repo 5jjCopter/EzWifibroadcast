@@ -78,4 +78,4 @@ RX: Raspberry Pi1 and Pi Zero have just about enough CPU power for one RX dongle
 
 ### References
 - Discussion forum on rcgroups for this project [can be found here](http://www.rcgroups.com/forums/showthread.php?t=2664393)
-- Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences with befinitivs Wifibroadcast image.  
+- Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences about befinitiv's (original) Wifibroadcast image.  

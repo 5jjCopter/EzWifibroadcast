@@ -69,6 +69,8 @@ AWUS036NH, AWUS036NHA, AWUS051NH, TL-WN722N, TL-WN822N V2, CSL 300Mbit stick
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 
+Take a look [at the images](https://github.com/bortek/EZ-WifiBroadcast/wiki/Images) of the hardware and their weights.
+
 ### Notes
 
 TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (720p, 4.5Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). I'd recommend a Pi2 or 3 as a TX because of this, it has enough headroom to not be worried about CPU usage at all.

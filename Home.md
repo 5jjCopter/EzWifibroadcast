@@ -39,6 +39,9 @@ Previous versions: v1.0 [ez-wifibroadcast-1.0.zip](https://googledrive.com/host/
 - Startup time reduced, now about 10-15 seconds depending on Pi model and Wifi cards used
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 
+### Wifi cards and doungles
+There is a list of card and doungles on [this page](https://github.com/bortek/EZ-WifiBroadcast/wiki/Lis-of-Wifi-cards-and-doungles)
+
 ###Tested Raspberry Pi Hardware
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)

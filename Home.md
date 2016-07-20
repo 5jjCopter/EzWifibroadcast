@@ -4,7 +4,7 @@ Read through this page before you start asking questions on the forum.
 ### Download
 These are direct download links to images.  
 
-Latest version: v1.2 [EZ-wifibroadcast-1.2.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip)
+Latest version: v1.2 [EZ-wifibroadcast-1.2.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/EZ-wifibroadcast-1.2.zip) Release notes and Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/v1.2-Release-Note)
 
 Previous versions: v1.0 [ez-wifibroadcast-1.0.zip](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/ez-wifibroadcast-1.0.zip)
 

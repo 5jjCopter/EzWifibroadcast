@@ -46,7 +46,7 @@ There is a list of Wifi cards and doungles on [this Wiki page](https://github.co
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 
-Take a look [at the images](https://github.com/bortek/EZ-WifiBroadcast/wiki/Images) of the hardware and their weights.
+Take a look [at the images](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.
 
 ### Notes
 

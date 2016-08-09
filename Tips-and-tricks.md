@@ -48,7 +48,7 @@ type the following commands:
 * cd /root/
 * wget https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/Patches/global_patch.patch
 * cd linux
-* patch -p1 < ../global_patch.patch
+* patch -p1 < ../patch-global.patch
 * KERNEL=kernel7
 * make bcm2709_defconfig
 * make -j4 zImage modules dtbs

@@ -46,7 +46,7 @@ type the following commands:
 * wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source && sudo chmod +x /usr/bin/rpi-source && /usr/bin/rpi-source -q --tag-update
 * rpi-source
 * cd /root/
-* wget https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/Patches/global_patch.patch
+* wget https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/Patches/patch-global.patch
 * cd linux
 * patch -p1 < ../patch-global.patch
 * KERNEL=kernel7

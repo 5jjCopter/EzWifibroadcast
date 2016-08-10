@@ -36,3 +36,15 @@ put
 NICS=`ls /sys/class/net | grep wlan | grep -v wlan0`   
 save file and exist, reboot, you're done
 
+if you want to setup your internal wifi as AP, please proceed as following :   
+
+ * sudo su
+ * rw
+ * apt-get update
+ * apt-get install isc-dhcp-server
+ * apt-get install hostapd
+ * wget https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/Patches/ap.tar.gz
+ * tar zxpvf ap.tar.gz
+ * reboot
+  
+you're done, it will install you an AP named Anemos_AP with the following password anemostec

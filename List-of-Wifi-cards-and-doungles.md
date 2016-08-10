@@ -22,3 +22,10 @@ On the other hand, if everybody gets the same cards, we'll never find out which 
 AWUS036NH, AWUS036NHA, AWUS051NH, TL-WN722N, TL-WN822N V2, CSL 300Mbit stick
 
 (My favourites for 2.4Ghz are TL-WN722N and AWUS036NHA at the moment, for 5Ghz the AWUS051NH. The more I test with the CSL 300Mbit dongles, the less I like them, not much TXPower, unclean signal when TXPower raised, they seem to have problems with high power TX cards when used as an RX card (bad blocks when being to near) and somehow there seem to be more badblocks compared to the 722N when used on a wifi channel with other wifi networks.)
+
+### Good Antenna is essential for quality. Here are some reads about Antennas
+
+http://videoaerialsystems.com/about/fpv-guide-to-success/#Antenna
+
+https://vimeo.com/8826952
+

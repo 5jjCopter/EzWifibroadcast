@@ -48,3 +48,27 @@ if you want to setup your internal wifi as AP, please proceed as following :
  * reboot
   
 you're done, it will install you an AP named Anemos_AP with the following password anemostec
+
+### enable the tethering connection between the RX raspberry pi and your android phone
+
+on your RX pi issue the following commands
+  * sudo su
+  * rw
+  * systemctl enable urandom
+  * systemctl enable networking
+  * nano /etc/network/interfaces
+  * add the following lines \: 
+allow-hotplug usb0  
+iface usb0 inet dhcp
+
+  * save and exit the nano editor
+  * nano wifibroadcast_fpv_scripts/rx.sh
+  * add the following lines after the sleep 3 line \:
+
+# wait for tethering to be done
+while ! (ifconfig | grep usb0 > /dev/null);  do echo "waiting for smartphone..."; sleep 1; done
+
+  * save the exit nano editor
+  * reboot
+
+you're done

@@ -57,7 +57,8 @@ on your RX pi issue the following commands
   * systemctl enable urandom
   * systemctl enable networking
   * nano /etc/network/interfaces
-  * add the following lines \: 
+  * add the following lines \:   
+
 allow-hotplug usb0  
 iface usb0 inet dhcp
 
@@ -65,8 +66,8 @@ iface usb0 inet dhcp
   * nano wifibroadcast_fpv_scripts/rx.sh
   * add the following lines after the sleep 3 line \:
 
-# wait for tethering to be done
-while ! (ifconfig | grep usb0 > /dev/null);  do echo "waiting for smartphone..."; sleep 1; done
+\# wait for tethering to be done
+while \! (ifconfig | grep usb0 > /dev/null);  do echo "waiting for smartphone..."; sleep 1; done
 
   * save the exit nano editor
   * reboot

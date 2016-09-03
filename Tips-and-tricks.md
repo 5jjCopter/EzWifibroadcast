@@ -66,7 +66,7 @@ iface usb0 inet dhcp
   * nano wifibroadcast_fpv_scripts/rx.sh
   * add the following lines after the sleep 3 line \:
 
-\# wait for tethering to be done
+\# wait for tethering to be done   
 while \! (ifconfig | grep usb0 > /dev/null);  do echo "waiting for smartphone..."; sleep 1; done
 
   * save the exit nano editor

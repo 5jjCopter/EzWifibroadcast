@@ -69,7 +69,15 @@ iface usb0 inet dhcp
 \# wait for tethering to be done   
 while \! (ifconfig | grep usb0 > /dev/null);  do echo "waiting for smartphone..."; sleep 1; done
 
+change the DISPLAY_PROGRAM line to be as follow \:   
+DISPLAY_PROGRAM="socat -b 1024 - UDP4-SENDTO:192.168.42.129:5000"
+
   * save the exit nano editor
   * reboot
+
+when rebooted, on your android phone go to parameters => More => internet connexion sharing => share via usb
+The usb wifi dongle will start blinking
+Then use the mymediacodec_fpv player app : https://github.com/Consti10/myMediaCodecPlayer-for-FPV
+and test the connection, you should receive NALU frames.
 
 you're done

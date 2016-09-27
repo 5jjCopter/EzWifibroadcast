@@ -46,7 +46,7 @@ There is a list of Wifi cards and doungles on [this Wiki page](https://github.co
 Virtually any screen/monitor connected to HDMI port on your Pi should work. Besides that the following has been tested and works.
  - Samsung 32 inch TV connected via HDMI to Pi.
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.
- - An LCD module from old 17 inch laptop with eBay driver [example](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
+ - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
 
 
 ###Tested Raspberry Pi Hardware

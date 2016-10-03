@@ -8,5 +8,3 @@ If you have a 3D printer and want to print it you there are STL files as well as
 ![](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/case2.jpg)
 ![](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/case3.jpg)
 ![](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/case4.jpg)
-
-![qq](https://googledrive.com/host/0B8ke2EKPqvORMFAtSU1RbmxENHM/case4.jpg)

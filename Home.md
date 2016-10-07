@@ -10,7 +10,7 @@ Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0
 
 Previous version: v1.0 [ez-wifibroadcast-1.0.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORQU5RYi1EbEpQMUE&export=download)
 
-BETA version (anesmos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://drive.google.com/open?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) Release notes and Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/v1.2beta-anemos-Release-Note)
+BETA version (anesmos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://docs.google.com/uc?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) Release notes and Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/v1.2beta-anemos-Release-Note)
 
 
 ### Installation / Setup

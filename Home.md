@@ -36,7 +36,7 @@ Handling has changed from Version 1.3 on (Video will be temporarily saved to RAM
 
 
 ###Features
-- Supports all Raspberry Pi models including Pi3, Pi Zero and also Odroid-W (Older Raspi A+ models untested though)
+- Supports all Raspberry Pi B+ models including Pi3, Pi Zero and also Odroid-W (Older Raspi A+ models not recommended)
 - Supports the new Pi V2 cam
 - Configuration can be done from Windows, no Linux knowledge required
 - Support for 2.4Ghz band (incl. Channel 14) and all three 5Ghz bands on Ralink and Atheros cards

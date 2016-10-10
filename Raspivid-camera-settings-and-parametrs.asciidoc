@@ -1,0 +1,37 @@
+These parameters can be added or changed under EXTRAPARAMS= in wifibroadcast.txt
+
+
+camera parameters:
+
+-md, --mode     	: Force sensor mode. 0=auto. See docs for other modes available
+
+-sh, --sharpness        : Set image sharpness (-100 to 100)
+
+-co, --contrast 	: Set image contrast (-100 to 100)
+
+-br, --brightness       : Set image brightness (0 to 100)
+
+-sa, --saturation       : Set image saturation (-100 to 100)
+
+-ISO, --ISO     	: Set capture ISO
+
+-ev, --ev     		: Set EV compensation
+
+-ex, --exposure 	: Set exposure mode (auto,night,nightpreview,backlight,spotlight,sports,snow,beach,verylong,fixedfps,antishake,fireworks)
+
+-awb, --awb    		: Set AWB mode (off,auto,sun,cloud,shade,tungsten,fluorescent,incandescent,flash,horizon)
+
+-mm, --metering 	: Set metering mode (average,spot,backlit,matrix)
+
+-hf, --hflip   		: Set horizontal flip
+
+-vf, --vflip  		: Set vertical flip
+
+-ss, --shutter 		: Set shutter speed in microseconds
+
+-awbg, --awbgains       : Set AWB gains - AWB mode must be off
+
+-drc, --drc    		: Set DRC Level (off,low,med,high)
+
+-ifx, --imxfx 		: Set image effect (denoise, solarise, negative, emboss, colourswap, washedout)
+

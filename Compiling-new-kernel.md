@@ -9,6 +9,8 @@ For Raspberry Pi2/3:
 * ./copy7.sh
 * reboot
 
+
+
 For Raspberry Pi1/Zero/Odroid-W:
 * cd /usr/src/v6-kernel
 * make menuconfig

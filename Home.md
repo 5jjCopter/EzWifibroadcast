@@ -59,8 +59,8 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
  - Samsung 32 inch TV connected via HDMI to Pi.
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.
  - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
-- Goggles One 1080p display (needs to be set to fixed 1080p resolution in config.txt)
-- Headplay HD
+ - Goggles One 1080p display (needs to be set to fixed 1080p resolution in config.txt)
+ - Headplay HD
 
 ###Tested Raspberry Pi Hardware
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W

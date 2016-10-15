@@ -37,24 +37,25 @@ Handling has changed from Version 1.3 on (Video will be temporarily saved to RAM
 
 ###Features
 - Supports all Raspberry Pi B+ models including Pi3, Pi Zero and also Odroid-W (Older Raspi A+ models not recommended)
-- Supports the new Pi V2 cam
+- Supports V1 and V2 Raspberry cam
 - Configuration can be done from Windows, no Linux knowledge required
+- Resolution/fps: 1280x720p max 60fps, 1640x922 max. 40fps, 1920x1080p max. 30fps.
 - Support for 2.4Ghz band (incl. Channel 14) and all three 5Ghz bands on Ralink and Atheros cards
 - Support for 2.3Ghz band on Atheros cards
-- TXPower increased (and verified) for both Atheros and Ralink cards
-- 2x transmit diversity support
-- 6x receive diversity support using 3 cards (more should also be possible, just not tested yet)
-- Live RSSI display and defective blocks display per card
-- Video Ground recording to USB stick
+- Support for two TX cards on different frequencies
+- 8x receive diversity support using 4 wifi cards
+- Live RSSI and defective blocks display per card
+- Telemetry/OSD support for FrSky and other protocols
+- Video and telemetry ground recording to USB stick
 - Screenshot recording on the ground
 - Startup time reduced, about 10-15 seconds depending on Pi model and Wifi cards used
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 
 
-### Wifi cards and doungles
-There is a list of Wifi cards and doungles on [this Wiki page](https://github.com/bortek/EZ-WifiBroadcast/wiki/List-of-Wifi-cards-and-doungles)
+### Wifi cards and dongles
+There is a list of Wifi cards and dongles on [this Wiki page](https://github.com/bortek/EZ-WifiBroadcast/wiki/List-of-Wifi-cards-and-doungles)
 
-### Screens Monitor
+### Screens/Monitor
 Virtually any screen/monitor connected to the HDMI port on your Pi should work. Besides that the following displays have been tested and work:
  - Samsung 32 inch TV connected via HDMI to Pi.
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.

@@ -19,38 +19,32 @@ On the other hand, if everybody gets the same cards, we'll never find out which 
 
 
 **AWUS036NHA**
-
 This adapter will provide around 280mW output power. Ranges of several kilometers have been reported (with directional antennas though).
 
 
 
 **TL-WN722N**
-
-This adapter will provide around 60mW output power. Range should be roughly around 800-1000m with stock antennas.
+This adapter will provide around 60mW output power. Range should be roughly around 800-1000m with 2.1dbi stock antennas.
 There is a potential issue with the LNA combining. Under certain circumstances, the second antenna on the PCB causes bad reception.
 
 
 
 **CSL 300Mbit stick**
-
-This adapter provides around 30mw output power. Range on 5Ghz is not very high, around 200-300m.
+This adapter provides around 30mw output power. Range on 5Ghz is not very high, around 200-300m. Stock antennas are not usable on 5Ghz, as they are simple 2.4Ghz 2.1dbi sleeved-dipole antennas.
 
 When used as an Rx dongle, bad blocks can occur when the received signal strength is higher than -20dbm. This can be worked-around by using more than one adapter and pointing antennas in different directions / polarizations.
 
 
 
 **AWUS051NH**
-
-This adapter will provide around 330mw output power. Range on 5Ghz is around 800-1000m with stock antennas.
+This adapter will provide around 330mw output power. Range on 5Ghz is around 800-1000m. Stock antenna is not recommended because they have 5dbi gain, which will give a too-flat radiation pattern.
 
 
 
 **AWUS052NH**
-
-This adapter will provide around 330mw output power. This is the same adapter as the 051NH, but with two TX chains.
+This adapter will provide around 330mw output power. This is the same adapter as the 051NH, but with two TX chains. Stock antennas are not recommended because they have 5dbi gain, which will give a too-flat radiation pattern.
 
 
 
 **TL-WN822N V2**
-
 This adapter will provide around 60mw output power. Currently, there is an issue with injection when there are other signals present on the 2.4G band, not recommended as TX adapter.

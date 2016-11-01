@@ -15,7 +15,7 @@ BETA version (anesmos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2be
 
 ### Installation / Setup
 - Download the image and unzip it
-- Write it onto two (minimum 2GB) SD Cards. One for Transmitter part and another for Receiver part. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img file on SD card.
+- Write it onto two (minimum 4GB) SD Cards. One for Transmitter part and another for Receiver part. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img file on SD card.
 - Insert each SD card into each Raspberry Pi and boot them up.
 
 

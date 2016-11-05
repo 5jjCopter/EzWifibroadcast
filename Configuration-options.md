@@ -48,3 +48,12 @@ Wifi card MAC addresses and frequency for the TX wifi cards need to be set here 
 ### MAC_RX[0]= / FREQ_RX[0]=
 Wifi card MAC addresses and frequency for the RX wifi cards need to be set here when dual TX mode is enabled. Please note that counting starts with index 0. Maximum four cards supported for RX (Index 0-3)
 
+
+### VIDEO_BLOCKS= / VIDEO_FECS= / VIDEO_BLOCKLENGTH=
+These parameters allow for a trade-off between link-resiliency, latency and achievable data rate (and thus quality).
+
+See here for some in-depth explanation: https://befinitiv.wordpress.com/2015/07/19/forward-error-correction-for-wifibroadcast/
+
+If using Pi2 or Pi3 as TX, you can try 12/6/768 or 16/8/512 (with about same latency as 8/4/1024) If latency doesn't matter for you, maybe try something like 24/12/768.
+
+If using two TX cards in alternate mode, you can try 12/12/512 for fully redundant link (will allow for about 8Mbit video bitrate) or 12/6/768 for higher bandwidth link (will allow for about 11-12Mbit video bitrate)

@@ -40,10 +40,11 @@ Duplicate mode wil send _the same_ packets on both cards, i.e. it will simply du
 
 
 
-### MAC_RX[0]=
-### FREQ_RX[0]=
-### MAC_TX[0]=
-### FREQ_TX[0]=
+### MAC_TX[0]= / FREQ_TX[0]=
+Wifi card MAC addresses and frequency for the TX wifi cards need to be set here when dual TX mode is enabled. Please note that counting starts with index 0. Maximum two cards supported for TX (Index 0-1)
 
-MAC addresses and frequency for the RX and TX wifi need to be set here when dual TX mode is enabled. Please note that counting starts with index 0. Maximum two cards supported for TX, maximum four cards supported for RX (Index 0-3).
+
+
+### MAC_RX[0]= / FREQ_RX[0]=
+Wifi card MAC addresses and frequency for the RX wifi cards need to be set here when dual TX mode is enabled. Please note that counting starts with index 0. Maximum four cards supported for RX (Index 0-3)
 

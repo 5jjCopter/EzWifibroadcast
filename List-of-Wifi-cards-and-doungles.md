@@ -13,7 +13,7 @@ However, there might be whatever small issues that prevent some cards from worki
 - ALFA AWUS051NH v2 (2.4Ghz/5Ghz, high power, Ralink RT3572 chipset)
 - ALFA AWUS052NH v2 (2.4Ghz/5Ghz, Diversity, high power, Ralink chipset)
 - TP-Link-TL-WDN3200 (2.4/5Ghz, Diversity, RT5572 chipset) 
-
+- Ralink RT5572 (2.4/5Ghz, Diversity???, RT5572 chipset) 
 
 On the other hand, if everybody gets the same cards, we'll never find out which other ones work. There are also very small and lightweight RT5370 cards available in china shops for under 4$. Aliexpress for example has a lot of cheap wifi cards in general. It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
 

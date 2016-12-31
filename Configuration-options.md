@@ -92,3 +92,67 @@ Maximum supported resolutions/FPS for V1 cam: 1280x720: 30fps, 48fps. 1920x1080:
 Maximum supported resolutions/FPS for V2 cam: 1280x720: 30fps, 48fps, 59.9fps. 1640x922: 30fps, 40fps. 1920x1080: 30fps
 
 Possible bitrates are dependent on wifi_bitrates and FEC settings, see below.
+
+### KEYFRAMERATE=
+Lower values mean faster glitch-recovery, but also lower video quality. With fps=48 and keyframerate=5, glitches will stay visible for around 100ms in worst case. Set this higher or lower according to your needs, for fast and low flying you may want a lower value to get faster gltich-recovery. Minimum value is 2.
+
+### EXTRAPARAMS=
+Set additional raspivid parameters here
+
+
+### VIDEO_WIFI_BITRATE=
+Physical WiFi Bitrate for video data stream. Lower bitrates yield higher RX sensitivity and thus range. Setting works only for Ralink cards! Atheros cards must be set by editing /etc/modprobe.d/ath9k_htc.conf.
+Maximum recommended video bitrates for single and duplicate tx modes: 6Mbit: 2.5Mbit, 12Mbit: 4.5Mbit, 18Mbit: 6.5Mbit, 24Mbit: 8.5Mbit, 36Mbit: 11.5Mbit (You can probably go a little higher, but test carefully, it might introduce stutter sudden latency spikes, especially on a Pi1/Pi0). (For alternate tx mode with 12/12/1024 max. safe video bitrate is ~8Mbit, with 12/6/1024 max. safe video bitrate is ~11Mbit)
+
+
+### OSD_WIFI_BITRATE=
+Physical WiFi Bitrate for OSD data stream. Keep this below the video wifi bitrate for added reliability. Setting works only for Ralink cards!
+
+### RC_SERIALPORT=
+Serialport to use on the TX Pi for the Multiwii serial protocol R/C connection. Set this to "/dev/serial0" for Pi onboard serial port or  "/dev/ttyUSB0" for USB-to-serial adapter
+
+### RC_BAUDRATE= / RC_STTY_OPTIONS=
+Leave these settings at defaults.
+
+### RC_WIFI_BITRATE=
+Wifi bitrate to use for RC connection. If using Atheros, don't forget to change the bitrate in  /etc/modprobe.d/ath9k_htc.conf also.
+
+### RC_TXMODE= / RC_NICS
+TX Mode and wifi cards to use for sending RC, separated by a space when using alternate or duplicate tx mode
+
+
+### DISPLAY_PROGRAM=
+- mmormota's stutter-free hello_video.bin: "hello_video.bin.30-mm" (for 30fps) or "hello_video.bin.48-mm" (for 48 and 59.9fps)
+- befinitiv's hello_video.bin: "hello_video.bin.240-befi" (for any fps, use this for higher than 59.9fps)
+
+
+### WIFI_HOTSPOT=
+Set this to "Y" to enable Wifi Hotspot. Default SSID is "EZ-Wifibroadcast", password is "wifibroadcast". See apconfig.txt for configuration. This will forward the received video and telemetry streams to an android device or computer connected to the RX Pi via WiFi. Please note, that you need atleast 120Mhz of space between the hotspot frequency and the video frequency used.
+
+
+### WIFI_HOTSPOT_NIC=
+Set to "internal" to use the interal Pi3 wifi chip or the MAC address of the USB card you want to use
+
+### ETHERNET_HOTSPOT=
+set this to "Y" to enable Ethernet hotspot. This will forward the received video and telemetry streams to another computer or other device connected to the Raspberry via Ethernet
+
+### VIDEO_UDP_PORT= / VIDEO_UDP_BLOCKSIZE= / OSD_UDP_PORT= / OSD_UDP_BLOCKSIZE=
+set the SOCAT UDP parameters for USB tethering, ethernet and wifi hotspot here
+
+### ENABLE_SCREENSHOTS=
+Set to "Y" to enable periodic screenshots every 10 seconds
+
+### VIDEO_TMP=
+Set to "memory" to use RAMdisk for temporary video/screenshot/telemetry storage. This limits recording time to ~12-14 minutes, but is the safe way. If you need longer recording times, use "sdcard", to use the sdcard as the temporary video storage. Keep in mind though, that this might introduce video stutter and/or bad blocks. **TEST CAREFULLY BEFORE USING!**
+
+### RELAY=
+set this to "Y" to enable wifibroadcast relay mode. This will forward the received video and telemetry streams to another wifibroadcast RX. Note! Currently, the RSSI display you see on the RX behind the relay is not the RSSI between aircraft and ground, but between relay and rx on the ground!
+
+### RELAY_NIC= / RELAY_FREQ= 
+Wifi stick and frequency to use for the relay 
+
+### RELAY_VIDEO_BLOCKS= / RELAY_VIDEO_FECS= / RELAY_VIDEO_BLOCKLENGTH= 
+Video FEC settings for relay mode
+
+###  RELAY_OSD_BLOCKS= / RELAY_OSD_FECS= / RELAY_OSD_BLOCKLENGTH=
+Telemetry FEC settings for relay mode

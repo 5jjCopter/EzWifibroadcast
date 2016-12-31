@@ -71,7 +71,5 @@ lowest supported channel (to make sure users don't accidently use an undesired f
 - disabled Systemd journal daemon (used up CPU ...)
 - Kept software, tools and libs etc. in the image, should make modifying or adding own features to the image easier
 - Support for two TX wifi dongles. Experimental right now, not in the config file, has to be configured manually in Linux
-
-Bugfixes:
-- Potential rapidly raising latency, stuttering image on Pi1/Zero in some cases: overclocked CPU/GPU/RAM, force_turbo=1, enabled performance governoer, reduced bitrate to 4.5Mbit, video.c patched to 240fps, added fflush in RX process, removed systemd-journald
-- AWUSH051NH and 052NH did not work cleanly as TX on 5Ghz band: Reduced TXPower for Ralink chipsets
+- Bugfix: Potential rapidly raising latency, stuttering image on Pi1/Zero in some cases: overclocked CPU/GPU/RAM, force_turbo=1, enabled performance governoer, reduced bitrate to 4.5Mbit, video.c patched to 240fps, added fflush in RX process, removed systemd-journald
+- Bugfix: AWUSH051NH and 052NH did not work cleanly as TX on 5Ghz band: Reduced TXPower for Ralink chipsets

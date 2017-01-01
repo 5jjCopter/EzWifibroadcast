@@ -156,3 +156,6 @@ Video FEC settings for relay mode
 
 ###  RELAY_OSD_BLOCKS= / RELAY_OSD_FECS= / RELAY_OSD_BLOCKLENGTH=
 Telemetry FEC settings for relay mode
+
+### QUIET=
+Set this to "Y" to disable text messages about Display and Wifi card setup etc. to get a more "clean" display

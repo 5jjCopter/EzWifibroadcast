@@ -32,7 +32,7 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 - Video recording time is limited to around 13mins with ramdisk temporary video storage. Longer recording times are possible with sdcard temporary storage, but this can currently cause video stuttering. Use a fast sdcard.
 
 
-###Features
+###Features (apply to the latest release)
 - Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps

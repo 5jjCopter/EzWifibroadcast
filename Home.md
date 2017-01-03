@@ -7,9 +7,9 @@ These are direct download links to images.
 Stable version: v1.4 [EZ-Wifibroadcast-1.4.zip](https://drive.google.com/open?id=0BxyIDQpjwq9YWk9mLWR1b0JENDg) Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/V1.4-Changelog)
 
 
-BETA version: v1.3 [EZ-Wifibroadcast-1.3beta.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORazlSb3hxS0hOOTA&export=download) Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/v1.3BETA-Changelog)
+BETA version: v1.3 [EZ-Wifibroadcast-1.3beta.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORazlSb3hxS0hOOTA&export=download) Release notes [is here]https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes)
 
-Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0B8ke2EKPqvORRmdUenJ0WmtFc1U&export=download) Changelog [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/v1.2-Release-Note)
+Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0B8ke2EKPqvORRmdUenJ0WmtFc1U&export=download) Release notes [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes)
 
 Stable version: v1.0 [ez-wifibroadcast-1.0.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORQU5RYi1EbEpQMUE&export=download)
 

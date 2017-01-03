@@ -73,3 +73,13 @@ lowest supported channel (to make sure users don't accidently use an undesired f
 - Support for two TX wifi dongles. Experimental right now, not in the config file, has to be configured manually in Linux
 - Bugfix: Potential rapidly raising latency, stuttering image on Pi1/Zero in some cases: overclocked CPU/GPU/RAM, force_turbo=1, enabled performance governoer, reduced bitrate to 4.5Mbit, video.c patched to 240fps, added fflush in RX process, removed systemd-journald
 - Bugfix: AWUSH051NH and 052NH did not work cleanly as TX on 5Ghz band: Reduced TXPower for Ralink chipsets
+
+### Anemos-EZ-Wifibroadcast 1.2 beta
+ - This new BETA image contains the following changes made by user anemostec from rcgroups. It is technically a fork and is based on Stable v1.2 image.
+- kernel recompiled with full joystick support and 1000Hz interrupt modification suggested by rodizio
+- befinitiv wifibroadcast code heavily revised to optimize serial communication
+- RC command joystick support added with PPM frame support and almost zero latency (not measured yet but far below 100ms). compatible with almost every flight controler in the market
+- USB tethering configuration activated by default 
+ - For all serial communication, we have to use the new wifibroadcast library instead of the old tx and rx utility, an exemple has been provided with the joystick_send_command.c file. The pipe communication has been removed in order to further reduce the latency.
+ - The PPM frame generation is made by an external arduino connected by usb to the raspeberry pi, the source code of it is available in the rc_landing directory
+ - The default password of this new distribution is anemos

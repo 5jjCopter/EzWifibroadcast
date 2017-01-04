@@ -33,9 +33,12 @@ The received telemetry data stream will also be saved to an USB memory stick aut
 
 
 ### 3. Wiring
-- Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! (See https://pinout.xyz/ for pinout)
+- Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! (See https://pinout.xyz/ for pinout).
+
+For Naze32 and clones: Do not send an inverted serial signal, the Pi doesn't support this. When using a Naze32 with softserial, disable this on the Cleanflight CLI with `set telemetry_inversion = OFF`
 
 - Power the system up, you should see the received packets counter for telemetry data in the upper right corner increasing. If it stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case.
+
 
 
 ## Using configuration profiles

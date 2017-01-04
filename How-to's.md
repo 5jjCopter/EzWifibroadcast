@@ -92,7 +92,7 @@ Other external cards have not been tested much, but Ralink based sticks seem to 
 Please also note, that "normal" Wifi transmission is by far not as stable as wifibroadcast transmission, so be aware that there might be stuttering or badblocks, disconnects or other typical wifi issues when using the Wifi Hotspot. If you need a reliable video stream on the android device, consider using USB Tethering.
 
 
-## Ground recording Video/telemetry/screenshots)
+## Ground recording (Video/telemetry/screenshots)
 
 EZ-Wifibroadcast automatically stores video and telemetry in a temporary storage while it is being received from the TX. Saving screenshots (in 10s intervals) is also possible by setting "ENABLE_SCREENSHOTS=Y" in wifibroadcast-1.txt.
 

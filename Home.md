@@ -4,26 +4,28 @@
 ### Download
 These are direct download links to images.  
 
-Stable version: v1.4 [EZ-Wifibroadcast-1.4.zip](https://drive.google.com/open?id=0BxyIDQpjwq9YWk9mLWR1b0JENDg) or [form mirror](https://drive.google.com/uc?id=0B8ke2EKPqvORR0lXVGptSEhwOU0&export=download) Release notes [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes)
+Stable version: v1.4 [EZ-Wifibroadcast-1.4.zip](https://drive.google.com/open?id=0BxyIDQpjwq9YWk9mLWR1b0JENDg) or [form mirror](https://drive.google.com/uc?id=0B8ke2EKPqvORR0lXVGptSEhwOU0&export=download)
 
+BETA version: v1.3 [EZ-Wifibroadcast-1.3beta.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORazlSb3hxS0hOOTA&export=download)
 
-BETA version: v1.3 [EZ-Wifibroadcast-1.3beta.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORazlSb3hxS0hOOTA&export=download) Release notes [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes#ez-wifibroadcast-13-beta)
-
-Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0B8ke2EKPqvORRmdUenJ0WmtFc1U&export=download) Release notes [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes#ez-wifibroadcast-12)
+Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0B8ke2EKPqvORRmdUenJ0WmtFc1U&export=download)
 
 Stable version: v1.0 [ez-wifibroadcast-1.0.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORQU5RYi1EbEpQMUE&export=download)
 
-BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://docs.google.com/uc?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) Release notes [is here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Release-notes#anemos-ez-wifibroadcast-12-beta)
+BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://docs.google.com/uc?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) 
 
 
 ### Installation / Setup
-- Download the image and unzip it
-- Write it onto two (minimum 2GB) SD Cards. One for transmitter Pi and another for Receiver Pi. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img file on SD card.
+- Download the sdcard image and unzip it
+- Write it onto two (minimum 2GB) SD cards. One for transmitter Pi and another for Receiver Pi. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img files on SD cards.
 - Insert each SD card into each Raspberry Pi and boot them up.
 
 
 ###Configuration
-- Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone) and edit wifibroadcast.txt and osdconfig.txt to suit your needs. For firt tests, do not change anything but frequency.
+- Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone), edit wifibroadcast-1.txt and change frequency (`FREQ=`) to your needs.
+- Do not change anything else for first tests
+- If everything runs as intended, change configuration options in wifibroadcast-1.txt, osdconfig.txt and apconfig.txt
+- See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To] section https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's for more info
 
 
 ###Ground Recording

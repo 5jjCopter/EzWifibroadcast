@@ -28,12 +28,6 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 - See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To] section https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's for more info
 
 
-###Ground Recording
-- Fly (Do _not_ plug in USB memory stick before)
-- Plug-in USB memory stick after flight - recorded video will be shown and video/screenshots/telemetry will be saved
-- Video recording time is limited to around 13mins with ramdisk temporary video storage. Longer recording times are possible with sdcard temporary storage, but this can currently cause video stuttering. Use a fast sdcard.
-
-
 ###Features
 (applicable to the latest release)
 - Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
@@ -91,9 +85,4 @@ Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pi
 ### Notes
 TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will most likely not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). Although many people successfully use a Pi Zero as a TX, if space and weight is no issue, a Pi2 or 3 is recommended.
 
-
 RX: Raspberry Pi1 and Pi Zero are not supported anymore from version 1.3 on. Use a Pi2 or Pi3.
-
-### References
-- Discussion forum on rcgroups for this project [can be found here](http://www.rcgroups.com/forums/showthread.php?t=2664393)
-- Here's a [long thread](http://www.rcgroups.com/forums/showthread.php?t=2454052) with more infos and experiences about befinitiv's (original) Wifibroadcast image.  

@@ -1,11 +1,10 @@
 These are images of different hardware modules (Submitted by @Rodizio)
 
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-1.jpg)
+![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-12.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-2.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-3.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-4.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-5.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-6.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-8.jpg)
-![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-9.jpg)
-![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/wifibroadcast-hardware-10.jpg)

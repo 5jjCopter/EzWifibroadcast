@@ -38,6 +38,11 @@ Depending on the amount of data your flight control sends, you may want to incre
 
 
 
+  
+  
+  
+
+
 ## Using configuration profiles
 
 To quickly change settings on the field, eight different configuration profiles selectable via GPIO pins are supported. This way, DIP switches, 3-way switches or jumpers can be used to change configuration, similar to analog gear.

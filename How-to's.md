@@ -62,4 +62,4 @@ GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt
 0 = GPIO pin left open
 1 = GPIO pin connected to GND
 
-(Sorry for the screwed-up table, this Github markup language sucks ...)
+(Sorry for the screwed-up table, this Github markup language sucks, I'll see if I can move the wiki to some other page, have had enough of this ...)

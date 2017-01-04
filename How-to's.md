@@ -1,4 +1,4 @@
-## Setting up the OSD
+# Setting up the OSD
 
 
 ## 1. configure general OSD and telemetry parameters in wifibroadcast-1.txt:

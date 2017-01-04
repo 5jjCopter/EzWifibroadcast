@@ -17,14 +17,13 @@
 
 ## 2. Configure telemetry protocol and OSD options in osdconfig.txt
 
-- Remove the "//" characters in front of the `OSD_RSSI` and `OSD_RSSI_DETAILED` options to enable an RSSI and packets display for the OSD data in the upper right side of the screen. This way, you can see easily check if data is being received. E.g.: `#define OSD_RSSI` and `#define OSD_RSSI_DETAILED`
+- Remove the "//" characters in front of the `#OSD_RSSI` and `#OSD_RSSI_DETAILED` options to enable an RSSI and packets display for the OSD data in the upper right side of the screen. This way, you can see easily check if data is being received. E.g.: `#define OSD_RSSI` and `#define OSD_RSSI_DETAILED`
 
 - Choose the telemetry protocol used, Frsky is default, other options supported are Mavlink, Lightweight telemetry (LTM), NMEA GPS. E.g.: `#define FRSKY`
 
-- Chose an appropriate for the OSD. 50ms = 20 updates per seconds should be okay, if you don't use the artificial horizon or other features that require a high update rate to be smooth, you can increase it. If you feel the OSD is not smooth enough, try decreasing it. Do not go below 20ms. E.g. `#define UPDATE_INTERVAL 30`
-
 - Choose graphical OSD options you would like to have enabled in osdconfig.txt. Should be self-explanatory.
 
+- Chose an appropriate update interval for the OSD. 50ms = 20 updates per seconds should be okay for most, if you don't use the artificial horizon or other features that require a high update rate to be smooth, you can increase it. If you feel the OSD is not smooth enough, try decreasing it. Do not go below 20ms. E.g. `#define UPDATE_INTERVAL 30`
 
 Generally, try to configure your flight control so that it does not send out unnecessary large amounts of data to keep the packet rate as low as possible.
 

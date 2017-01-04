@@ -6,7 +6,7 @@ The wifibroadcast.txt configuration file is split-up into three sections:
 
 
 
-#### FREQ=
+### FREQ=
 
 The following frequencies are supported:
 

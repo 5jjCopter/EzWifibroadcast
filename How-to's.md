@@ -19,7 +19,7 @@
 
 - Remove the "//" characters in front of the `#OSD_RSSI` and `#OSD_RSSI_DETAILED` options to enable an RSSI and packets display for the OSD data in the upper right side of the screen. This way, you can see easily check if data is being received. E.g.: `#define OSD_RSSI` and `#define OSD_RSSI_DETAILED`
 
-- Choose the telemetry protocol used, Frsky is default, other options supported are Mavlink, Lightweight telemetry (LTM), NMEA GPS. E.g.: `#define FRSKY`
+- Choose the telemetry protocol used, Frsky is default, other options supported are Mavlink and Lightweight telemetry (LTM). E.g.: `#define FRSKY`
 
 - Choose graphical OSD options you would like to have enabled in osdconfig.txt. Should be self-explanatory.
 

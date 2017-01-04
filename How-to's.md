@@ -44,3 +44,22 @@ To quickly change settings on the field, eight different configuration profiles 
 3 GPIO pins give 8 possible combinations, from wifibroadcast-1.txt to wifibroadcast-8.txt. Just copy over the existing configfile with a new number and make desired changes (e.g. frequency, or camera settings) there. If you want to have a means to know which profile is selected on the TX, you can use the raspivid annotation parameters under EXTRAPARAMS to let raspivid insert the profile number or whatever text you would like into the video stream. On the RX there is currently no display which profile has been loaded.
 
 The GPIO pins are being checked during boot-up, to select a different configuration, simply change the DIP-switch (and power-off and on again if the system was already running during the DIP switch change).
+
+
+## Wiring:
+
+GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt
+  0        0       0        1
+  0        0       1        2
+  0        1       0        3
+  0        1       1        4
+  1        0       0        5
+  1        0       1        6
+  1        1       0        7
+  1        1       1        8
+
+
+0 = GPIO pin left open
+1 = GPIO pin connected to GND
+
+(Sorry for the screwed-up table, this Github markup language sucks ...)

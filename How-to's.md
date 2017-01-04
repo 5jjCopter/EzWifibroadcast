@@ -35,3 +35,29 @@ Depending on the amount of data your flight control sends, you may want to incre
 - Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! (See https://pinout.xyz/ for pinout)
 
 - Power the system up, you should see the received packets counter for telemetry data in the upper right corner increasing. If it stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case.
+
+
+
+## Using configuration profiles
+
+To quickly change settings on the field, eight different configuration profiles selectable via GPIO pins are supported. This way, DIP switches, 3-way switches or jumpers can be used to change configuration, similar to analog gear.
+
+3 GPIO pins give 8 possible combinations, from wifibroadcast-1.txt to wifibroadcast-8.txt. Just copy over the existing configfile with a new number and make desired changes (e.g. frequency, or camera settings) there. If you want to have a means to know which profile is selected on the TX, you can use the raspivid annotation parameters under EXTRAPARAMS to let raspivid insert the profile number or whatever text you would like into the video stream. On the RX there is currently no display which profile has been loaded.
+
+The GPIO pins are being checked during boot-up, to select a different configuration, simply change the DIP-switch (and power-off and on again if the system was already running during the DIP switch change).
+
+
+Wiring:
+
+`GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt`
+  `0        0       0        1`
+  `0        0       1        2`
+  `0        1       0        3`
+  `0        1       1        4`
+  `1        0       0        5`
+  `1        0       1        6`
+  `1        1       0        7`
+  `1        1       1        8`
+
+`0 = GPIO pin left open`
+`1 = GPIO pin connected to GND`

@@ -87,3 +87,13 @@ Note: To not interfere with each other, there must be about 130Mhz of "space" be
 Other external cards have not been tested much, but Ralink based sticks seem to work for 5Ghz so far.
 
 Please also note, that "normal" Wifi transmission is by far not as stable as wifibroadcast transmission, so be aware that there might be stuttering or badblocks, disconnects or other typical wifi issues when using the Wifi Hotspot. If you need a reliable video stream on the android device, consider using USB Tethering.
+
+
+## Ground recording Video/telemetry/screenshots)
+
+EZ-Wifibroadcast automatically stores video and telemetry in a temporary storage while it is being received from the TX. Saving screenshots (in 10s intervals) is also possible by setting "ENABLE_SCREENSHOTS=Y" in wifibroadcast-1.txt.
+
+To save video, telemetry and screenshots to a USB memory stick, simply plug the stick in. After a few seconds, a message should appear and the recorded video will start playing on the HDMI screen while being saved to USB. A message will appear when saving is done.
+
+Currently, recording is limited to ~13 minutes due to the temporary storage being a ram disk. You can set `VIDEO_TMP=sdcard`to use the sdcard as temporary storage. Boot-up will take a little longer the first timeafter this option has been set, as the temporary storage on the sdcard needs to be prepared first.
+**WARNING:** Due to issues with the linux kernel, this may lead to video stuttering badblocks or video freezing. Use a fast sdcard to mitigate this and test thoroughly before flying!

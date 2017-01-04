@@ -25,8 +25,9 @@ This adapter will provide around 280mW output power. Ranges of several kilometer
 
 **TL-WN722N**
 This adapter will provide around 60mW output power. Range should be roughly around 800-1000m with 2.1dbi stock antennas.
-There is a potential issue with the LNA combining. Under certain circumstances, the second antenna on the PCB causes bad reception.
+_**IMPORTANT:**_ Under certain circumstances, the second antenna on the PCB causes bad reception. Please disconnect the antenna by removing the white PCB component on the back of the PCB like shown below (in the picture, the component was soldered to the upper pad to be able to reverse the mod if needed)
 
+![722N](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/722n-mod.jpg)
 
 
 **CSL 300Mbit stick**

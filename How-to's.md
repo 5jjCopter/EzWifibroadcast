@@ -31,7 +31,7 @@ Depending on the amount of data your flight control sends, you may want to incre
 
 
 
-### 3. 
-Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. WARNING:**** The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port!
+### 3. Wiring
+- Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. WARNING:**** The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! (See https://pinout.xyz/ for pinout)
 
-See https://pinout.xyz/ for pinout.
+- Power the system up, you should see the received packets counter for telemetry data in the upper right corner increasing. If it stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case.

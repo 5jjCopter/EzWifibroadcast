@@ -37,12 +37,6 @@ Depending on the amount of data your flight control sends, you may want to incre
 - Power the system up, you should see the received packets counter for telemetry data in the upper right corner increasing. If it stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case.
 
 
-
-  
-  
-  
-
-
 ## Using configuration profiles
 
 To quickly change settings on the field, eight different configuration profiles selectable via GPIO pins are supported. This way, DIP switches, 3-way switches or jumpers can be used to change configuration, similar to analog gear.

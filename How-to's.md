@@ -29,6 +29,7 @@ Generally, try to configure your flight control so that it does not send out unn
 
 Depending on the amount of data your flight control sends, you may want to increase `OSD_BLOCKLENGTH=64` to something larger like 256 to reduce the amount of telemetry packets. Compare the amount of packets of the video stream (on the upper left side) to the amount of packets of the telemetry stream (upper right) to get an idea. The number of OSD packets should not be more than 10% of the number of video packets.
 
+The received telemetry data stream will also be saved to an USB memory stick automatically.
 
 
 ### 3. Wiring

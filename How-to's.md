@@ -1,7 +1,7 @@
-# Setting up the OSD
+## Setting up the OSD
 
 
-## 1. configure general OSD and telemetry parameters in wifibroadcast-1.txt:
+### 1. configure general OSD and telemetry parameters in wifibroadcast-1.txt (both on TX and RX)
 
 - Set `OSD=Y` in wifibroadcast-1.txt (already enabled by default)
 
@@ -15,7 +15,7 @@
 
 
 
-## 2. Configure telemetry protocol and OSD options in osdconfig.txt
+### 2. Configure telemetry protocol and OSD options in osdconfig.txt (only on the RX)
 
 - Remove the "//" characters in front of the `#OSD_RSSI` and `#OSD_RSSI_DETAILED` options to enable an RSSI and packets display for the OSD data in the upper right side of the screen. This way, you can see easily check if data is being received. E.g.: `#define OSD_RSSI` and `#define OSD_RSSI_DETAILED`
 

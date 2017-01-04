@@ -54,16 +54,15 @@ The GPIO pins are being checked during boot-up, to select a different configurat
 
 Wiring:
 
-{|| GPIO 7 | GPIO24 | GPIO23 | wifibroadcast-f.txt |
-  | ------ | ------ | ------ | ------------------- |
-  | 0 	 | 0	  | 0      | 1			   |
-  | 0 	 | 0	  | 1      | 2			   |
-  | 0 	 | 1	  | 0      | 3			   |
-  | 0 	 | 1	  | 1      | 4			   |
-  | 1 	 | 0	  | 0      | 5			   |
-  | 1 	 | 0	  | 1      | 6			   |
-  | 1 	 | 1	  | 0      | 7			   |
-  | 1 	 | 1	  | 1      | 8			   ||}
+GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt
+  0        0       0        1
+  0        0       1        2
+  0        1       0        3
+  0        1       1        4
+  1        0       0        5
+  1        0       1        6
+  1        1       0        7
+  1        1       1        8
 
 `0 = GPIO pin left open`  
 `1 = GPIO pin connected to GND`  

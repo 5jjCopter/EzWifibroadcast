@@ -25,7 +25,7 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 - Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone), edit wifibroadcast-1.txt and change frequency (`FREQ=`) to your needs.
 - Do not change anything else for first tests
 - If everything runs as intended, change configuration options in wifibroadcast-1.txt, osdconfig.txt and apconfig.txt
-- See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To] section https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's for more info
+- See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To section] (https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's) for more info
 
 
 ###Features

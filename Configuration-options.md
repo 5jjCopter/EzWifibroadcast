@@ -5,9 +5,8 @@ The wifibroadcast.txt configuration file is split-up into three sections:
 3. TX Settings: These settings only affect the TX
 
 
-## Common settings
 
-### FREQ=
+#### FREQ=
 
 The following frequencies are supported:
 

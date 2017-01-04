@@ -62,4 +62,27 @@ GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt
 0 = GPIO pin left open
 1 = GPIO pin connected to GND
 
-(Sorry for the screwed-up table, this Github markup language sucks, I'll see if I can move the wiki to some other page, have had enough of this ...)
+(Sorry for the screwed-up table, this Github markup language sucks, will fix that sometime else ...)
+
+
+### Using the USB Tethering functionality
+
+###1. Connect your android smartphone or tablet via USB to the RX Pi.
+###2. Enable USB-Tethering in the options of your smartphone (note, some smartphones don't support this out-of-the box or seem to have this function disabled, you may need a 3rd party app to make USB-Tethering work with your device)
+3. Start FPV_VR app on android device
+
+If you also have a HDMI monitor connected to the RX, you should see a short message at the bottom of the screen when the android device has been detected.
+
+
+### Using the Wifi-Hotspot functionality
+
+### 1. Set `WIFI_HOTSPOT=Y`in wifibroadcast-1.txt to enable the Wifi hotspot
+### 2. Leave `WIFI_HOTSPOT_NIC=internal` if you want to use the internal onboard Wifi adapter of the Pi3 or set it to the MAC address (all lower case, no spaces, dashes or colons) of the wifi adapter you want to use for the Hotspot.
+### 3. Configure SSID, password and channel in apconfig.txt if desired. Default SSID is "EZ-Wifibroadcast", default password is "wifibroadcast", channel is 1.
+### 4. Connect to the Wifi hotspot, if you also have a HDMI monitor connected, you should see a message that the device has been detected.
+
+Note: To not interfere with each other, there must be about 130Mhz of "space" between Hotspot frequency and wifibroadcast video transmission frequency. The internal Pi3 wifi card only supports frequencies from 2.412MHz to 2472Mhz, so if using the internal wifi card, it's not possible to use the 2.4G band for wifibroadcast transmission.
+
+Other external cards have not been tested much, but Ralink based sticks seem to work for 5Ghz so far.
+
+Please also note, that "normal" Wifi transmission is by far not as stable as wifibroadcast transmission, so be aware that there might be stuttering or badblocks, disconnects or other typical wifi issues when using the Wifi Hotspot. If you need a reliable video stream on the android device, consider using USB Tethering.

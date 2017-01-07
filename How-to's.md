@@ -157,3 +157,39 @@ Connect the serial port RX pin of your flight control to the serial port TX pin 
   - in the uppermost line, you will see dbm and blocks info, it should be counting up and should not show any badblocks
   - increase distance to the aircraft until you are at the end of the video range. R/C control should now still work, you should _not_ see lots of badblocks on the TX monitor in the uppermost line.
 - If everything works as expected, fly. Be careful, this feature has not been tested much, RTH or autopilot is recommended
+
+
+## Displaying the video stream on an android device, iPhone/iPad, Windows PC, Linux PC
+
+Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot to the Wifibroadcast RX.
+
+### Android
+Google play store app: https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR
+
+Usage information and source code: https://github.com/Consti10/FPV_VR
+
+
+###iPhone/iPad:
+Fishing FanCam app: https://itunes.apple.com/us/app/fishing-fancam/id1187600031
+
+- Click on the eye icon (on the bottom right)
+- Now a debug screen appears, select all on the upper bar, delete all parameters and set:
+
+`udpsrc port=5000 ! h264parse ! avdec_h264 ! autovideosink sync=false`
+
+###Windows:
+Gstreamer 32-Bit Windows: https://gstreamer.freedesktop.org/data/pkg/windows/1.10.2/gstreamer-1.0-x86-1.10.2.msi
+
+Gstreamer 64-Bit Windows: https://gstreamer.freedesktop.org/data/pkg/windows/1.10.2/gstreamer-1.0-x86_64-1.10.2.msi
+
+Use the following commandline:
+
+`gst-launch-1.0.exe udpsrc port=5000 ! H264parse ! Avdec_h264 ! Autovideosink sync=False`
+
+
+###Linux:
+Install gstreamer using the package management system of your linux distribution
+
+Use the following commandline:
+
+`gst-launch-1.0 udpsrc port=5000 ! h264parse ! avdec_h264 ! autovideosink sync=false`

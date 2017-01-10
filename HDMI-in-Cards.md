@@ -25,6 +25,11 @@ FPS=25  #(or 30)
 
 EXTRAPARAMS="-cd H264 -n -fl -ih -pf high -md 1 -awb off -awbg 1.0,1.0 -ex off"
 
+Here is the Youtube video showing the card in action.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NZZFx7HoXIw/0.jpg)](https://www.youtube.com/watch?v=NZZFx7HoXIw)
+
+
 
 More info here:
 

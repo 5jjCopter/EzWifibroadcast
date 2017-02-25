@@ -1,5 +1,5 @@
 ## Welcome to the EZ-WifiBroadcast wiki!  
-** Please Read through this page and other sub-pages before you start asking questions on the forum.**
+**Please read through this page and other sub-pages before you start asking questions on the forum.**
 
 ### Download
 These are direct download links to images.  

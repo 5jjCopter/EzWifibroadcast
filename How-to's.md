@@ -85,7 +85,7 @@ If you also have a HDMI monitor connected to the RX, you should see a short mess
 - Configure SSID, password and channel in apconfig.txt if desired. Default SSID is "EZ-Wifibroadcast", default password is "wifibroadcast", channel is 1.
 - Connect to the Wifi hotspot, if you also have a HDMI monitor connected, you should see a message that the device has been detected.
 
-Note: To not interfere with each other, there must be about 130Mhz of "space" between Hotspot frequency and wifibroadcast video transmission frequency. The internal Pi3 wifi card only supports frequencies from 2.412MHz to 2472Mhz, so if using the internal wifi card, it's not possible to use the 2.4G band for wifibroadcast transmission.
+Note: To not interfere with each other, there must be about 130Mhz of "space" between Hotspot frequency and wifibroadcast video transmission frequency. The internal Pi3 wifi card only supports frequencies from 2412MHz to 2472Mhz, so if using the internal wifi card, it's not possible to use the 2.4G band for wifibroadcast transmission.
 
 Other external cards have not been tested much, but Ralink based sticks seem to work for 5Ghz so far.
 

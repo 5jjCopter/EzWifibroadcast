@@ -1,4 +1,4 @@
-* FP_VR (Viewer for android devices connected to Pi via USB tethering):
+* FPV_VR (Viewer for android devices connected to Pi via USB tethering):
 Google Play Store App: https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR
 
 * FPV_VR Source code: https://github.com/Consti10/FPV_VR

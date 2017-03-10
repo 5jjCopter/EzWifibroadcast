@@ -1,5 +1,7 @@
 These parameters can be added or changed under EXTRAPARAMS= in wifibroadcast.txt
 
+NOTE: This is done on the TX(Transmitter) side
+
 
 camera parameters:
 

@@ -31,6 +31,8 @@ camera parameters:
 
 -vf, --vflip  		: Set vertical flip
 
+-rot 180  		: Rotate 180 degrees, if the camera is mounted upside down
+
 -ss, --shutter 		: Set shutter speed in microseconds
 
 -awbg, --awbgains       : Set AWB gains - AWB mode must be off

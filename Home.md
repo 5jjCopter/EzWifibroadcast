@@ -21,16 +21,17 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 - Insert each SD card into each Raspberry Pi and boot them up.
 
 
-###Configuration
+### Configuration
 - Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone), edit wifibroadcast-1.txt and change frequency (`FREQ=`) to your needs.
 - Do not change anything else for first tests
 - If everything runs as intended, change configuration options in wifibroadcast-1.txt, osdconfig.txt and apconfig.txt
 - See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To section] (https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's) for more info
 
 
-###Features
+### Features
 (applicable to the latest release)
 - Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
+- For Pi Zero W support see here: https://github.com/bortek/EZ-WifiBroadcast/wiki/Pi-Zero-W-support
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps
 1296x972p 42fps
@@ -76,7 +77,7 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define you monitor resolution in config.txt statically though to be able to plug you monitor after the Pi is already running.
 
-###Tested Raspberry Pi Hardware
+### Tested Raspberry Pi Hardware
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 

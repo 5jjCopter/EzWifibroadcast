@@ -1,9 +1,9 @@
 Recommended SRx parameters for Mavlink telemetry:
 
 * SR1_EXT_STAT: (voltage, ampere, satfix, sats) 2Hz
-* SR1_EXTRA1: (roll/pitch) 10Hz
+* SR1_EXTRA1: (roll, pitch) 10Hz
 * SR1_EXTRA2: (speed) 5Hz
-* SR1_POSITION: (GPS heading alt, lat, long) 5Hz
+* SR1_POSITION: (GPS heading, alt, lat, long) 5Hz
 
 Depending on the serialport used, parameters may also be named SR0_xxx or SR2_xxx. Make sure that the flight control sends out the above telemetry data sets on the appropriate serialport.
 

@@ -16,10 +16,10 @@ There are more cases on the thingiverse.com if you search for wifibroadcast you 
 
 For Pi0 and TPLink 722N.
 
-[STL file download]http://www.unmanned-technologies.de/wp-content/uploads/2017/03/EZ-Wifi_Case_FinGadar.zip
+[STL file download](http://www.unmanned-technologies.de/wp-content/uploads/2017/03/EZ-Wifi_Case_FinGadar.zip)
 
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/BEC_Gummi.jpg)
-![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Cam_Waage.jpg.jpg)
+![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Cam_Waage.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Deckel_Unterseite.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Einbau.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/EZ-Wifibroadcast-Cam.jpg)
@@ -33,7 +33,7 @@ For Pi0 and TPLink 722N.
 
 For Pi3 and Alfa AWUS036NHA
 
-[Thingiverse Link]http://www.thingiverse.com/thing:2220644
+[Thingiverse Link](http://www.thingiverse.com/thing:2220644)
 
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/IMG_2501.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/IMG_2502.jpg)

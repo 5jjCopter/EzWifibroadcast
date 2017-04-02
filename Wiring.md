@@ -25,3 +25,4 @@
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi0-Wiring-small.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi3-Wiring-small.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/052nh-wiring.jpg)
+

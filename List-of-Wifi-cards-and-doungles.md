@@ -1,4 +1,4 @@
-##Wifi Cards:
+## Wifi Cards:
 The following Atheros chipsets should work:
 - Atheros AR9271, Atheros AR9280, Atheros AR9287
 

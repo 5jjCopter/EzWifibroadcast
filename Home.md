@@ -74,6 +74,8 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
  - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
  - Goggles One 1080p display (needs to be set to fixed 1080p resolution in config.txt)
  - Headplay HD
+ - Fatshark HD
+ - Yuneec Skyview
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define you monitor resolution in config.txt statically though to be able to plug you monitor after the Pi is already running.
 

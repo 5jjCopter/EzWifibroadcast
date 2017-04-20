@@ -98,57 +98,29 @@ Currently, recording is limited to ~13 minutes due to the temporary storage bein
 
 The R/C link from ground Pi to air Pi uses MSP (MultiWii Serial Protocol). This is also what is being output on the air Pi serial port. To use it with other protocols, you can use an Arduino with code by Anemostec to convert the R/C data from MSP to PPM for example.
 
-Obviously, to get the same R/C range as video range, you need the same transmit power on both sides, so using a high-power card on the aircraft and only low-power cards on the ground won't make much sense, as the control range will be shorter than the video range.
-
-Currently, there is no RSSI display for the R/C connection on the RX OSD, so you have to make sure, that R/C range is greater than video range. This is achieved by three things:
-
-- R/C control is sent with lower bitrate, yielding slightly higher sensitivity and thus more range than the video link
-- R/C control is sent with a rate of 100 packets per seconds or to say it differently, the stick positions are updated every 10ms. This allows for quite high packetloss rates (as long as there are not too many consecutive packets lost) since even with a packetloss rate of 50%, we'd still receive 50 stick positions per seconds which should still be sufficient for control. The video link however, will not tolerate 50% packetloss, so the R/C link should be more robust than the video link
-- R/C control uses shorter packets (MSP is only 26bytes payload compared to the 1024 bytes used for the video link), this reduces the probability of collisions and thus packetloss
-
-Be careful, this feature has not been tested much, RTH or autopilot is recommended
+Be careful, this feature has not been tested much, RTH or autopilot is recommended. Feature only works with Atheros cards!
 
 ### 1. Configure R/C general parameters in wifibroadcast-1.txt (both on TX and RX)
 
 - set `ENABLE_RC=Y`
-- For the onboard Pi serial port leave default `RC_SERIALPORT=/dev/serial0`, if using an external USB2Serial adapter, set `RC_SERIALPORT=/dev/ttyUSB0`
-- Choose the mode in which the R/C packets are to be transmitted:
-  `RC_TXMODE=single` uses a single wifi card on the RX for transmitting R/C packets
-  `RC_TXMODE=alternate` uses two cards on the RX for transmitting R/C packets in an alternating pattern (i.e. packet 1 on card1, packet2 on card2, packet3 on card1, packet4 on card2 and so forth)
-  `RC_TXMODE=duplicate` also uses two cards, but sends each R/C packet out twice, one on each interface.
-- Chose which cards on the RX you want to use for transmitting R/C packets by setting `RC_NICS` to the MAC address of these cards, e.g. `RC_NICS="24050f0f4175"`
-- If you are using Atheros cards, login to the linux system on the _RX_, then:
-  - type `rw` to make filesystem writeable
-  - type `nano /etc/modprobe.d/ath9k_htc.conf`
-  - inside that file, change `fw_bitrate=18` to `fw_bitrate=12`
-  - Hit `CTRL-X`to exit the editor, answer `Y` to save the file
-  - typ `reboot`to re-start and apply the bitrate change
+- For the onboard Pi serial port leave default `RC_FC_SERIALPORT=/dev/serial0`, if using an external USB2Serial adapter, set `RC_SERIALPORT=/dev/ttyUSB0`
+- Set the `FC_RC_BAUDRATE=` parameter according to your flightcontrol. 19200 is the minimum required.
 
-###2. Configure joystick related settings in joyconfig.txt
-- Axis mapping to ROLL, PITCH, etc. is pre-configured for a Taranis in USB mode, if you use something else, you need to change numbers so that they match the corresponding controls.
+### 2. Configure joystick related settings in joyconfig.txt
+- Axis mapping to ROLL, PITCH, THROTTLE, etc. may need to be changed.
 
 - `#define AXIS0_INITIAL=`sets the initial values for the controls. This is necessary, as it is currently not possible to detect the stick positions until they have been moved. For yaw, roll, pitch you probably want 1500, for throttle 1000.
 
-For a Taranis in Joystick mode, This should do:
+### 3. Enable R/C RSSI in osdconfig.txt
+- uncomment the `#define RC_RSSI` line
 
-`#define AXIS0_INITIAL 1500`
-
-`#define AXIS1_INITIAL 1500`
-
-`#define AXIS2_INITIAL 1000`
-
-`#define AXIS3_INITIAL 1500`
-
-###3. Wiring
+### 4. Wiring
 Connect the serial port RX pin of your flight control to the serial port TX pin on the Raspberry. The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V, or it might not reliably detect the serial signal (See https://pinout.xyz/ for pinout).
 
-###4. Testing
-- Connect a monitor (either HDMI or composite, if composite, uncomment `sdtv_mode=2` in config.txt) to the _TX_ Pi
-- Start up both TX and RX Pi
+### 5. Testing
 - Connect Joystick or Taranis in Joystick mode (Taranis needs to be powered before connecting)
-- Do a ground test for correct packet reception and signal on the _TX_ monitor:
-  - in the uppermost line, you will see dbm and blocks info, it should be counting up and should not show any badblocks
-  - increase distance to the aircraft until you are at the end of the video range. R/C control should now still work, you should _not_ see lots of badblocks on the TX monitor in the uppermost line.
+- Do a ground test for correct packet reception and signal:
+    - increase distance to the aircraft until you are at the end of the video range. R/C control should now still work, you should _not_ see lots of Lost packets in the RSSI display in the upper right corner.
 - If everything works as expected, fly. Be careful, this feature has not been tested much, RTH or autopilot is recommended
 
 
@@ -158,8 +130,11 @@ Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot t
 
 ### Android
 Google play store app: https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR
-
 Usage information and source code: https://github.com/Consti10/FPV_VR
+
+Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream to the FP_VR app!
+
+Set `FORWARD_STREAM=rtp` in wifibroadcast-1.txt to send use a RTP encapsulated h264 video stream (for Tower app, QGroundcontrol etc.)
 
 
 ###iPhone/iPad:
@@ -170,6 +145,8 @@ Fishing FanCam app: https://itunes.apple.com/us/app/fishing-fancam/id1187600031
 
 `udpsrc port=5000 ! h264parse ! avdec_h264 ! autovideosink sync=false`
 
+Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream
+
 ###Windows:
 #### Gstreamer:
 Gstreamer 32-Bit Windows: https://gstreamer.freedesktop.org/data/pkg/windows/1.10.2/gstreamer-1.0-x86-1.10.2.msi
@@ -179,6 +156,8 @@ Gstreamer 64-Bit Windows: https://gstreamer.freedesktop.org/data/pkg/windows/1.1
 Use the following commandline:
 
 `gst-launch-1.0.exe udpsrc port=5000 ! H264parse ! Avdec_h264 ! Autovideosink sync=False`
+
+Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream
 
 Some people reported the necessity to add the gst-launch-1.0.exe application to their firewall exception list, see this video for more info: https://www.youtube.com/watch?v=eHCfyWhEAvI
 

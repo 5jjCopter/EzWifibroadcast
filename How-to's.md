@@ -1,44 +1,37 @@
-## Setting up the OSD
-
+## Setting up telemetry and OSD
 
 ### 1. configure general OSD and telemetry parameters in wifibroadcast-1.txt (both on TX and RX)
 
-- Set `OSD=Y` (already enabled by default)
+- Set the Pi's serial port baudrate to the same baudrate as the serial telemetry data stream coming from the flight control. E.g. `FC_TELEMETRY_BAUDRATE=57600` if your flightcontrol sends it's telemetry data using 57600 baud.
 
-- Set the Pi's serial port baudrate to the same baudrate as the serial telemetry data stream coming from the flight control. E.g. `OSD_BAUDRATE=57600` if your flightcontrol sends it's telemetry data using 57600 baud.
+- For the onboard Pi serial port leave default `FC_TELEMETRY_SERIALPORT=/dev/serial0`, if using an external USB2Serial adapter, set `FC_TELEMETRY_SERIALPORT=/dev/ttyUSB0`
 
-- For the onboard Pi serial port leave default `OSD_SERIALPORT=/dev/serial0`, if using an external USB2Serial adapter, set `OSD_SERIALPORT=/dev/ttyUSB0`
-
-- If you want to connect your flight control to the TX Pi, leave `TELEMETRY_INPUT=tx`, if you have some other means of transmitting the telemetry to the ground (e.g. an LRS with telemetry downlink) choose `TELEMETRY_INPUT=rx` to receive the telemetry stream on the ground Pi serial port.
-
-- In case you want to use the OSD included in the Android FP_VR app, also choose the appropriate UDP port to which the telemetry stream will be forwarded by setting e.g. `OSD_UDP_PORT=5002` (See in the FPV_VR settings which port is the right one for your telemetry protocol).
-
+- If you want to connect your flight control to the TX Pi, leave `TELEMETRY_TRANSMISSION=wbc`, if you have some other means of transmitting the telemetry to the ground (e.g. an LRS with telemetry downlink) choose `TELEMETRY_TRANSMISSION=` to receive the telemetry stream on the ground Pi serial port. If using external telemetry transmission, also configure `EXTERNAL_TELEMETRY_SERIALPORT_GROUND=` and `EXTERNAL_TELEMETRY_SERIALPORT_GROUND_BAUDRATE=` accordingly (for 3DR dongles /dev/ttyUSB0/57600).
 
 
 ### 2. Configure telemetry protocol and OSD options in osdconfig.txt (only on the RX)
 
-- Remove the "//" characters in front of the `#OSD_RSSI` and `#OSD_RSSI_DETAILED` options to enable an RSSI and packets display for the OSD data in the upper right side of the screen. This way, you can see easily check if data is being received. E.g.: `#define OSD_RSSI` and `#define OSD_RSSI_DETAILED`
-
-- Choose the telemetry protocol used, Frsky is default, other options supported are Mavlink and Lightweight telemetry (LTM). E.g.: `#define FRSKY`
+- Choose the telemetry protocol used, Mavlink is default, other options supported are Mavlink and Lightweight telemetry (LTM). E.g.: `#define LTM`
 
 - Choose graphical OSD options you would like to have enabled in osdconfig.txt. Should be self-explanatory.
 
-- Chose an appropriate update interval for the OSD. 50ms = 20 updates per seconds should be okay for most, if you don't use the artificial horizon or other features that require a high update rate to be smooth, you can increase it. If you feel the OSD is not smooth enough, try decreasing it. Do not go below 20ms. E.g. `#define UPDATE_INTERVAL 30`
-
 Generally, try to configure your flight control so that it does not send out unnecessary large amounts of data to keep the packet rate as low as possible.
 
-Depending on the amount of data your flight control sends, you may want to increase `OSD_BLOCKLENGTH=64` to something larger like 256 to reduce the amount of telemetry packets. Compare the amount of packets of the video stream (on the upper left side) to the amount of packets of the telemetry stream (upper right) to get an idea. The number of OSD packets should not be more than 10% of the number of video packets.
-
-The received telemetry data stream will also be saved to an USB memory stick automatically.
+The received telemetry data stream will also be saved in text and raw form to an USB memory stick automatically for later review.
 
 
 ### 3. Wiring
 - Connect the serial port TX pin of your flight control to the serial port RX pin on the Raspberry. _**WARNING:**_ The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. 5V might destroy the Pi serial port! (See https://pinout.xyz/ for pinout).
 
-For Naze32 and clones: Do not send an inverted serial signal, the Pi doesn't support this. When using a Naze32 with softserial, disable this on the Cleanflight CLI with `set telemetry_inversion = OFF`
+For Cleanflight/Betaflight/Inav/etc.: Do not send an inverted serial signal, the Pi doesn't support this. When using a Naze32 clone with softserial, disable this on the CLI with e.g. `set telemetry_inversion = OFF` (may differ depending on firmware used)
 
-- Power the system up, you should see the received packets counter for telemetry data in the upper right corner increasing. If it stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case.
+- Power the system up, you should see the received data and decoded data counters for telemetry (last two numbers in the RSSI display in the upper left corner) increasing. If the first number stays at zero, there is no telemetry being transmitted/received, re-check wiring, baudrate and flight control settings in that case. If the first number increases, but the second number stays at zero, there is data being received, but it cannot be decoded, usually this is caused by wrong baudrate settings or wrong telemetry protocol chosen.
 
+
+## Setting up bi-directional mavlink telemetry
+
+- Set `TELEMETRY_UPLINK=mavlink` in wifibroadcast-1.txt
+- Connect Tower App, QGroundControl or Missionplanner via USB or Hotspot
 
 
 ## Using configuration profiles

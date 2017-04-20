@@ -1,5 +1,25 @@
 ## Release notes
 
+### EZ-Wifibroadcast 1.5
+- New feature: Bi-directional Mavlink telemetry support (both over wbc and external devices e.g. 3DR dongles or LRS with telemetry) (untested!)
+- New feature: Telemetry output on Rx Pi serialport for antenna tracker etc.
+- New feature: RSSI forwarding to FP_VR android app
+- New feature: RTP video stream forwarding to allow video display in Tower app and QGroundControl app
+- New feature: R/C RSSI and lost packets display added to OSD
+- New feature: CTS protection mode (only for Atheros), improves link quality in environments with wifi interference
+- New feature: Telemetry logging to textfile for later review and debugging
+- New feature: OSD text size can be scaled now, outlines can be disabled for better readability on low-res displays
+- New feature: OSD: GPS/Baro altitude and groundspeed/airspeed can be configured (untested!)
+- New feature: Transmit power for Atheros cards can be set in /etc/modprobe.d/ath9k_hw.conf now (thanks to eosbandi)
+- Bugfix: Typo in OSD frsky telemetry parser
+- Bugfix: Wifihotspot would not work when USB memory stick plugged during boot-up
+- Bugfix: Wifihotspot 2.4GHz Channels 12 and 13 did not work
+- Cleaned up OSD/telemetry configuration, no more configuring blocksize etc.
+- Uplink, dual tx mode and R/C link functionality re-written and improved (untested!)
+- Configuration file clean-up, less options, easier to configure
+- Wifi medium access timing changed (less agressive, may behave better in environments with wifi interference, untested though)
+
+
 ### EZ-Wifibroadcast 1.4
 - Display of good/lost packets to OSD for easier identification of interference
 - dbm display now grows/shrinks depending on signal strength

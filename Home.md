@@ -5,7 +5,7 @@
 These are direct download links to images.  
 
 
-Stable version: v1.5 [EZ-Wifibroadcast-1.5.zip](https://en.file-upload.net/download-12452039/EZ-Wifibroadcast-1.5.zip.html) (crappy free-hoster, do not visit without adblocker enabled!)
+Stable version: v1.5 [EZ-Wifibroadcast-1.5.zip](https://en.file-upload.net/download-12452039/EZ-Wifibroadcast-1.5.zip.html) (free-hoster, do not visit without adblocker enabled!)
 
 Stable version: v1.4 [EZ-Wifibroadcast-1.4.zip](https://drive.google.com/open?id=0BxyIDQpjwq9YWk9mLWR1b0JENDg) or [from mirror](https://drive.google.com/uc?id=0B8ke2EKPqvORR0lXVGptSEhwOU0&export=download)
 

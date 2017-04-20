@@ -1,9 +1,5 @@
 ## Pi Zero W support
 
-Currently, with EZ-Wifibroadcast 1.4, the newly released Pi Zero W is not supported due to the firmware being too old. Support for EZ-Wifibroadcast version 1.5 is planned.
+Currently, with EZ-Wifibroadcast 1.5, the newly released Pi Zero W is not supported due to the firmware being too old. Due to compatibility issues with the current kernel used, this unfortunately needs to be fixed manually for the Pi0 W:
 
-In the meantime, this can be fixed manually:
-
-- Download the latest official Raspbian Image (which contains the latest Raspberry firmware with Zero W support)
-- Copy the firmware files from that image over to your EZ-Wifibroadcast 1.4 image and replace the old files
-- Replace all files ending with *.dat, *.dtb and *.elf
+- Copy (and replace) the firmware files from the "pi0w-firmware" directory over the original firmware files on the sdcard

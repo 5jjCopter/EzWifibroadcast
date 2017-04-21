@@ -48,19 +48,20 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 - Configuration can be done from Windows, no Linux knowledge required
 - Supports different configuration profiles selectable on the field via jumpers or DIP switches
 - Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
+- Bi-directional mavlink telemetry support (untested)
+- Support for video and telemetry inside Tower App and QGroundcontrol etc.
 - Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
-- 2 wifi sticks transmit diversity on two different frequencies supported for bulletproof video link
+- 2 wifi sticks transmit diversity on two different frequencies (not much tested though)
 - 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink
 - Integrated OSD with support for Mavlink (not bi-directional), Frsky, LTM, NMEA GPS
-- .AVI Ground recording and .PNG screenshots automatically saved to USB stick
+- .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 - Quick startup, about 10 seconds until video is shown
-- No issues as with standard wifi, no disconnection, video freeze etc.
-- Graceful handling of signal degradation, no sudden loss of video
+- No issues as with standard wifi, no disconnection, video freeze etc, video will quickly recover
 - Live and responsive RSSI display with defective blocks and packetloss display
 - Handling similar to analog gear, just switch on and fly
 - Smooth and stutter-free video (thanks, mmormota)
 - Video reception is very stable even in difficult multipathing environments, no constant glitching like with analog
-- No expensive and large circular antennas required
+- No expensive, large and damage-prone circular antennas required
 - OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 - Debug logs and screenshot will be saved to sdcard in case of errors

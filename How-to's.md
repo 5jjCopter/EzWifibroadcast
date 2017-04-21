@@ -34,6 +34,7 @@ For Cleanflight/Betaflight/Inav/etc.: Do not send an inverted serial signal, the
 
 - Set `TELEMETRY_UPLINK=mavlink` in wifibroadcast-1.txt
 - Connect Tower App, QGroundControl or Missionplanner etc. via USB-Tethering or Hotspot
+- Connect the serial port RX pin of your flight control to the serial port TX pin on the Raspberry. The Pi uses 3.3V logic level on the serial ports, make sure your flight control also uses 3.3V. Flightcontrols which need 5V logic may not be able to detect the 3.3V signal level (See https://pinout.xyz/ for Raspberry pinout).
 
 
 ## Using configuration profiles

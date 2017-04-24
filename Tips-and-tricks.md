@@ -34,3 +34,12 @@ For Raspberry Pi1/Zero/Odroid-W:
 * make modules_install
 * ./copy6.sh
 * reboot
+
+### Extending range and reception quality
+Here are various setups that might help you extend the range and/or reception quality.
+
+* All TL-WN722N cards setup, one on the transmitter and three on the receiver Note: With Pi Zero on the tx side, you are limited to one tx card.
+
+* The dual TX function is not much tested yet and there may be timing issues which can lead to badblocks. Therefore try at first single TX stick and make sure that everything works as expected. You need at least about 120Mhz of "space" between the two different frequencies when using two TX sticks. For example one combination would be 1x CSL and 1x WN722N cards both on TX (Note, Pi Zero is not supported for multiple TX setup). Then RX side with the CSL sticks set to something like 2484Mhz and the 722n sticks to something below around 2360Mhz.
+
+* Since WN722N has more power than CSL, use one of that for TX and the one WN722N + 2 CSL sticks for RX. That should give you about 1km of stable range with stock antennas. Keep in mind though, the CSL sticks only work on 2412-2484, so you are limited to that frequency range when mixing Atheros and Ralink on the RX.

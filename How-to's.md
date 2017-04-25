@@ -136,8 +136,8 @@ Connect the serial port RX pin of your flight control to the serial port TX pin 
 Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot to the Wifibroadcast RX.
 
 ### Android
-[FPV_VR app](https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR
-Usage information and source code: https://github.com/Consti10/FPV_VR)
+[FPV_VR app in Playstore](https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR)
+[Usage information and source code](https://github.com/Consti10/FPV_VR)
 Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream to the FP_VR app.
 
 [Tower app](https://play.google.com/store/apps/details?id=org.droidplanner.android)
@@ -149,7 +149,7 @@ Set `FORWARD_STREAM=rtp` in wifibroadcast-1.txt to send use a RTP encapsulated h
 
 
 ### iPhone/iPad:
-Fishing FanCam app: https://itunes.apple.com/us/app/fishing-fancam/id1187600031
+[Fishing FanCam app](https://itunes.apple.com/us/app/fishing-fancam/id1187600031)
 
 - Click on the eye icon (on the bottom right)
 - Now a debug screen appears, select all on the upper bar, delete all parameters and set:
@@ -174,15 +174,11 @@ Some people reported the necessity to add the gst-launch-1.0.exe application to 
 Another Option is GStreamerHUD, see Github page here:
 https://github.com/MovLab2/GStreamerHUD
 
-Setup Download:
-https://www.dropbox.com/sh/5ys4jbvdgxg09cb/AABCm-OIjh5NI4WTDnr6KNw4a?dl=0&preview=GStreamerHUD.msi
+[Direct Setup Download](https://www.dropbox.com/sh/5ys4jbvdgxg09cb/AABCm-OIjh5NI4WTDnr6KNw4a?dl=0&preview=GStreamerHUD.msi)
 
-In case you get an error message that "api-ms-win-crt-runtime-l1-1-0.dll" is missing see here:
-https://support.microsoft.com/en-ph/help/2999226/update-for-universal-c-runtime-in-windows
-and here:
-https://answers.microsoft.com/en-us/windows/forum/windows8_1-performance/error-message-api-ms-win-crt-runtime-l1-10dll-is/3a72ff02-cf73-4536-baf7-bdfd2f132a9e
+In case you get an error message that "api-ms-win-crt-runtime-l1-1-0.dll" is missing see [here](https://support.microsoft.com/en-ph/help/2999226/update-for-universal-c-runtime-in-windows) and [here](https://answers.microsoft.com/en-us/windows/forum/windows8_1-performance/error-message-api-ms-win-crt-runtime-l1-10dll-is/3a72ff02-cf73-4536-baf7-bdfd2f132a9e)
 
-See here for a video: https://www.youtube.com/watch?v=eHCfyWhEAvI
+See [here](https://www.youtube.com/watch?v=eHCfyWhEAvI) for a video: 
 
 ### Linux:
 Install gstreamer using the package management system of your linux distribution

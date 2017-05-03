@@ -164,7 +164,7 @@ Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream
 [Gstreamer 64-Bit Windows](https://gstreamer.freedesktop.org/data/pkg/windows/1.10.2/gstreamer-1.0-x86_64-1.10.2.msi)
 
 Use the following commandline:
-`gst-launch-1.0.exe udpsrc port=5000 ! H264parse ! Avdec_h264 ! Autovideosink sync=False`
+`gst-launch-1.0.exe udpsrc port=5000 ! h264parse ! avdec_h264 ! autovideosink sync=false`
 
 Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream
 

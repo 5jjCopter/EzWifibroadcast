@@ -1,4 +1,4 @@
-The EZ-Wifibraodcast image consists of the following software components (not complete yet, will be updated ...)
+The EZ-Wifibraodcast image consists of the following software components (quick draft, will be updated ...)
 
 The Raspbian Distribution:
 https://www.raspberrypi.org/downloads/raspbian/

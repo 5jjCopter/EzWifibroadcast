@@ -5,6 +5,10 @@ The following Atheros chipsets should work:
 The following Ralink chipsets should work:
  - RT2070, RT2770, RT2870, RT3070, RT3071, RT3072, RT3370, RT3572, RT5370, RT5372, RT3573, RT5572
 
+The following Mediatek chipsets should work:
+ - MT7601
+
+
 However, there might be whatever small issues that prevent some cards from working, so if you want to play it safe, choose one of the cards that have been tested by different people and definitely work:
 
 - CSL 300Mbit Stick (2.4/5Ghz, Diversity, RT5572 chipset)

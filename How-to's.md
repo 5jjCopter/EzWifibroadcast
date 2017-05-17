@@ -141,7 +141,8 @@ Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot t
 Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream to the FP_VR app.
 
 [Tower app](https://play.google.com/store/apps/details?id=org.droidplanner.android)
-Set `FORWARD_STREAM=rtp` in wifibroadcast-1.txt to send a RTP encapsulated h264 stream to the app.
+- Set `FORWARD_STREAM=rtp` in wifibroadcast-1.txt to send a RTP encapsulated h264 stream to the app.
+- Set video port in Tower app settings to 5000. See [here](https://github.com/DroidPlanner/Tower/wiki/Custom-video-stream) for instructions.
 
 [QGroundControl App](https://play.google.com/store/apps/details?id=org.mavlink.qgroundcontrol)
 Set `FORWARD_STREAM=rtp` in wifibroadcast-1.txt to send use a RTP encapsulated h264 video stream to the app.

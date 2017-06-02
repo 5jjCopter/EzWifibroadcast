@@ -48,21 +48,9 @@ The GPIO pins are being checked during boot-up, to select a different configurat
 
 ### Wiring:
 
-GPIO7 | GPIO24 | GPIO23 | wifibroadcast-#.txt
-  0        0       0        1
-  0        0       1        2
-  0        1       0        3
-  0        1       1        4
-  1        0       0        5
-  1        0       1        6
-  1        1       0        7
-  1        1       1        8
+![DIP-switch wiring](https://github.com/bortek/EZ-WifiBroadcast/blob/master/wiki-content/CaptureDipSwitch.JPG)
 
 
-0 = GPIO pin left open
-1 = GPIO pin connected to GND
-
-(Sorry for the screwed-up table, this Github markup language sucks, will fix that sometime else ...)
 
 
 ## Using the USB Tethering functionality

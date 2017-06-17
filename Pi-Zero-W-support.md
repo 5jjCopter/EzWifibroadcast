@@ -6,6 +6,6 @@ To make EZ-Wifibroadcast work with your Pi0 W:
 
 - Download the Raspberry 2017-03-03 firmware from [here](http://downloads.raspberrypi.org/raspbian/archive/2017-03-03-17:49/boot.tar.xz)
 
-- Replace the original _start_x.elf_ file on the sdcard with the one from the above archive (.xz archives can be unpacked with WinRAR or 7-Zip)
+- Replace the original **start_x.elf** file on the sdcard with the one from the above archive (.xz archives can be unpacked with WinRAR or 7-Zip)
 
 

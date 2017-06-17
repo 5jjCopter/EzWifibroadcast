@@ -17,6 +17,7 @@ Stable version: v1.0 [ez-wifibroadcast-1.0.zip](https://docs.google.com/uc?id=0B
 
 BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://docs.google.com/uc?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) 
 
+Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez-wbc1.5-kernel-src.tar.bz2.html
 
 ### Installation / Setup
 - Download the sdcard image and unzip it

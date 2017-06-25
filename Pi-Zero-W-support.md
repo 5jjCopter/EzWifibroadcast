@@ -9,3 +9,4 @@ To make EZ-Wifibroadcast work with your Pi0 W:
 - Replace the original **start_x.elf** file on the sdcard with the one from the above archive (.xz archives can be unpacked with WinRAR or 7-Zip)
 
 
+Please note: The onboard wifi chip on the Pi Zero W is not supported. Maybe in a future release.

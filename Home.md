@@ -29,12 +29,12 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone), edit wifibroadcast-1.txt and change frequency (`FREQ=`) to your needs.
 - Do not change anything else for first tests
 - If everything runs as intended, change configuration options in wifibroadcast-1.txt, osdconfig.txt and apconfig.txt
-- See under [configuration options] (https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To section] (https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's) for more info
+- See under [configuration options](https://github.com/bortek/EZ-WifiBroadcast/wiki/Configuration-options) and the [How-To section](https://github.com/bortek/EZ-WifiBroadcast/wiki/How-to's) for more info
 
 
 ### Features
 (applicable to the latest release)
-- Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
+- Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
 - For Pi Zero W support see here: https://github.com/bortek/EZ-WifiBroadcast/wiki/Pi-Zero-W-support
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps
@@ -49,12 +49,12 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - Configuration can be done from Windows, no Linux knowledge required
 - Supports different configuration profiles selectable on the field via jumpers or DIP switches
 - Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
-- Bi-directional mavlink telemetry support (untested)
+- Bi-directional mavlink telemetry support (untested, not working reliably at the moment)
 - Support for video and telemetry inside Tower App and QGroundcontrol etc.
 - Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
-- 2 wifi sticks transmit diversity on two different frequencies (not much tested though)
+- 2 wifi sticks transmit diversity on two different frequencies (Ralink cards only)
 - 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink
-- Integrated OSD with support for Mavlink (not bi-directional), Frsky, LTM, NMEA GPS
+- Integrated OSD with support for Mavlink (not bi-directional), Frsky, LTM
 - .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 - Quick startup, about 10 seconds until video is shown
 - No issues as with standard wifi, no disconnection, video freeze etc, video will quickly recover
@@ -66,7 +66,7 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 - Debug logs and screenshot will be saved to sdcard in case of errors
-- RC over wifibroadcast via Joystick (not much tested yet)
+- RC over wifibroadcast via Joystick (Atheros only, not much tested yet)
 
 
 ### Wifi cards and dongles
@@ -85,12 +85,12 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define you monitor resolution in config.txt statically though to be able to plug you monitor after the Pi is already running.
 
 ### Tested Raspberry Pi Hardware
-- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W
+- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W, Pi A+ (the new with square footprint)
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 
 Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.
 
 ### Notes
-TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will most likely not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). Although many people successfully use a Pi Zero as a TX, if space and weight is no issue, a Pi2 or 3 is recommended.
+TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will most likely not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). Although many people successfully use a Pi Zero as a TX, if space and weight is no issue, consider using a Pi2 or 3 for TX.
 
 RX: Raspberry Pi1 and Pi Zero are not supported anymore from version 1.3 on. Use a Pi2 or Pi3.

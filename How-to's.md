@@ -13,7 +13,7 @@
 
 ### 2. Configure telemetry protocol and OSD options in osdconfig.txt (only on the RX)
 
-- Choose the telemetry protocol used, Mavlink is default, other options supported are Mavlink and Lightweight telemetry (LTM). E.g.: `#define LTM`
+- Choose the telemetry protocol used, Mavlink is default, other options supported are Frsky and Lightweight telemetry (LTM). E.g.: `#define LTM`
 
 - Choose graphical OSD options you would like to have enabled in osdconfig.txt. Should be self-explanatory.
 

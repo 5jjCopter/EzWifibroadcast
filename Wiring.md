@@ -1,4 +1,4 @@
-### Important notes:
+_**Read these instructions carefully and follow them! You'll very likely run into all kinds of strange problems, crashes, unstabilites, packetloss, bad blocks and glitches if you don't!**_
 
 - Many (even expensive brandname) USB power supplies or portable power banks either don't deliver the advertised amps and/or don't maintain stable 5Volts. 
 

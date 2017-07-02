@@ -20,6 +20,7 @@ BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2bet
 Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez-wbc1.5-kernel-src.tar.bz2.html
 
 ### Installation / Setup
+- _**IMPORTANT: Read and follow the [wiring instructions](https://github.com/bortek/EZ-WifiBroadcast/wiki/Wiring)**_
 - Download the sdcard image and unzip it
 - Write it onto two (minimum 2GB) SD cards. One for transmitter Pi and another for Receiver Pi. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img files on SD cards. Pi with the camera connected will act as a Tx an pi without camera will act as Rx. 
 - Insert each SD card into each Raspberry Pi and boot them up.

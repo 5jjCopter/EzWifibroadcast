@@ -24,7 +24,7 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - Download the sdcard image and unzip it
 - Write it onto two (minimum 2GB) SD cards. One for transmitter Pi and another for Receiver Pi. See instructions on [this page](https://www.raspberrypi.org/documentation/installation/installing-images/) on how to write .img files on SD cards. Pi with the camera connected will act as a Tx an pi without camera will act as Rx. 
 - Insert each SD card into each Raspberry Pi and boot them up.
-
+- _**AGAIN: Read and follow the [wiring instructions](https://github.com/bortek/EZ-WifiBroadcast/wiki/Wiring)**_
 
 ### Configuration
 - Put SD Card in Windows computer or anything that has a text editor (Tablet, Smartphone), edit wifibroadcast-1.txt and change frequency (`FREQ=`) to your needs.

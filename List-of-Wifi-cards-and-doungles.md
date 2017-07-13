@@ -1,4 +1,3 @@
-## Wifi Cards:
 In general, the following chipsets should work:
 
 - Atheros AR9271
@@ -65,9 +64,17 @@ For cheap alternatives check out the usual computer stores and maybe consider Al
 A good way to find out more about wifi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
 
 Search the web for those numbers and also these two very helpful sites:
-https://fccid.io/ (has FCC documents which contains internal photos)
-https://wikidevi.com/wiki/
+* https://fccid.io/ (FCC documents which contain internal photos)
+* https://wikidevi.com/wiki/ (general infos and sometimes photos)
 
 When you have found photos, google for the numbers on the amps to find a datasheet giving a rough estimate about the expectable output power.
 
 It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
+
+
+## External amp
+Another way to increase output power is to use a low-power wifi stick combined with an external amp like this "2W" amp:
+
+https://www.banggood.com/2_4G-2W-Radio-Signal-Booster-Antenna-Feeder-For-DJI-Phantom-Multirotor-TX-Extend-Range-p-986756.html?rmmds=search
+
+Real output power is around 600mW with a low-power AR9271 stick.

@@ -16,6 +16,7 @@ Examples:
 - TP-Link-TL-WDN3200 (2.4/5Ghz, Diversity, RT5572 chipset) 
 - Rosewill RNX-N600UBE (2.4/5Ghz, Diversity, RT5572 chipset, txpower unknown currently, RT5572 chipset)
 
+Pay attention to the version number of the wifi adapter, manufacturers often use a completely different chipset with a different version number!
 
 ### **AWUS036NHA**
 This adapter will provide around 280mW output power. Ranges of several kilometers have been reported (with directional antennas though).

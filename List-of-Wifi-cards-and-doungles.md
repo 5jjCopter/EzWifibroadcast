@@ -1,13 +1,12 @@
 ## Wifi Cards:
-The following chipsets should work:
+In general, the following chipsets should work:
 
-- Atheros AR9271, Atheros AR9280, Atheros AR9287
+- Atheros AR9271
 - Ralink RT2070, RT2770, RT2870, RT3070, RT3071, RT3072, RT3370, RT3572, RT5370, RT5372, RT3573, RT5572
 - MediaTek MT7601
 
 
-However, there might be whatever small issues that prevent some cards from working, so if you want to play it safe, choose one of the cards that have been tested by different people and definitely work:
-
+Examples:
 - CSL 300Mbit Stick (2.4/5Ghz, Diversity, RT5572 chipset)
 - Alfa AWUS036NHA (2.3/2.4Ghz, high power, Atheros AR9271 chipset)
 - Ubiquiti Wifistation USB (2.3/2.4Ghz, high power, Atheros AR9271 chipset)
@@ -15,9 +14,7 @@ However, there might be whatever small issues that prevent some cards from worki
 - ALFA AWUS051NH v2 (2.4Ghz/5Ghz, high power, Ralink RT3572 chipset)
 - ALFA AWUS052NH v2 (2.4Ghz/5Ghz, Diversity, high power, Ralink chipset)
 - TP-Link-TL-WDN3200 (2.4/5Ghz, Diversity, RT5572 chipset) 
-- Ralink RT5572 (2.4/5Ghz, Diversity???, RT5572 chipset) 
-
-On the other hand, if everybody gets the same cards, we'll never find out which other ones work. There are also very small and lightweight RT5370 cards available in china shops for under 4$. Aliexpress for example has a lot of cheap wifi cards in general. It would be nice if you report back your findings in case you tried a wifi card that is not listed here.
+- Rosewill RNX-N600UBE (2.4/5Ghz, Diversity, RT5572 chipset, txpower unknown currently, RT5572 chipset)
 
 
 ### **AWUS036NHA**
@@ -53,5 +50,17 @@ This adapter will provide around 330mw output power. This is the same adapter as
 
 
 
-### **TL-WN822N V2**
-This adapter will provide around 60mw output power. Currently, there is an issue with injection when there are other signals present on the 2.4G band, not recommended as TX adapter.
+## Finding alternatives
+
+For cheap alternatives check out the usual computer stores and maybe consider Aliexpress. Be a little careful, some cards are of questionable quality. However, often, brandname wifi modules or USB sticks originally made for applications like Smart-TVs etc. are offered for a very good price.
+
+
+A good way to find out more about wifi sticks and modules offered online is to look for product numbers, chipsets, or even better an FCC ID. With those, try to find high-res internal photos of the cards, to find out the chipset and the amps used.
+
+Search the web for those numbers and also these two very helpful sites:
+https://fccid.io/ (has FCC documents which contains internal photos)
+https://wikidevi.com/wiki/
+
+When you have found photos, google for the numbers on the amps to find a datasheet giving a rough estimate about the expectable output power.
+
+It would be nice if you report back your findings in case you tried a wifi card that is not listed here.

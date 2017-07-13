@@ -15,6 +15,7 @@ Examples:
 - ALFA AWUS052NH v2 (2.4Ghz/5Ghz, Diversity, high power, Ralink chipset)
 - TP-Link-TL-WDN3200 (2.4/5Ghz, Diversity, RT5572 chipset) 
 - Rosewill RNX-N600UBE (2.4/5Ghz, Diversity, RT5572 chipset, txpower unknown currently, RT5572 chipset)
+- AW-NU138 (2.3/2.4Ghz, Atheros AR9271 chipset)
 
 Pay attention to the version number of the wifi adapter, manufacturers often use a completely different chipset with a different version number!
 
@@ -34,6 +35,12 @@ _**IMPORTANT:**_ Under certain circumstances, the second antenna on the PCB caus
 ![722N](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/722n-mod.jpg)
 
 
+
+### AW-NU138
+This adapter is very small, output power about 50mW. The internal antenna can be de-soldered and replaced with an external antenna. Since it's very small it runs quite warm, good cooling is needed.
+
+
+
 ### **CSL 300Mbit stick**
 This adapter provides around 30mw output power. Range on 5Ghz is not very high, around 200-300m. Stock antennas are not usable on 5Ghz, as they are simple 2.4Ghz 2.1dbi sleeved-dipole antennas.
 
@@ -48,7 +55,6 @@ This adapter will provide around 330mw output power. Range on 5Ghz is around 800
 
 ### **AWUS052NH**
 This adapter will provide around 330mw output power. This is the same adapter as the 051NH, but with two TX chains. Stock antennas are not recommended because they have 5dbi gain, which will give a too-flat radiation pattern.
-
 
 
 ## Finding alternatives

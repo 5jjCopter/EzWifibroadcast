@@ -13,3 +13,5 @@ To log into the Linux console, there are two ways:
 - Username: root
 - Password: raspberry
 
+
+**Note:** The filesystem is read-only, type "rw" to make it writeable.

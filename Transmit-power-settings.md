@@ -31,8 +31,8 @@ Change the txpower parameter. 0 is default, maximum value is 4 (+4db), minimum v
 ### Determining the maximum transmit power settings for yet unknown wifi dongles
 - First, make sure wiring and power supply is good, if not, you _will_ get problems and badblocks
 - Start with a low value, -2 for Ralink and 36 for Atheros
-- Find a free channel. This is important. On 2.4Ghz, finding a free channel can be next to impossible. In that case, you can 'simulate' a free channel by removing the antennas on the RX and keepint the TX right next to the RX
-- Test if everything works correctly. Let it run for an hour, you should get near zero packetloss.
-- Increase transmit power, then rinse and repeat until you find the spot where further increasing transmit power leads to badblocks
-- Decrease transmit power again until you see no more badblocks and then decrease it a little more to be on the safe side
-- Test again, let it run for an hour, you should see almost zero packetloss
+- Find a free channel. This is important. On 2.4Ghz, finding a free channel can be next to impossible. In that case, you can 'simulate' a free channel by removing the antennas on the RX and keeping the TX right next to the RX
+- Test if everything works correctly. Let it run for an hour, you should see near zero packetloss.
+- Increase transmit power, then rinse and repeat until you find the spot where further increasing transmit power leads to the packetloss counter steadily increasing
+- Decrease transmit power again until you see no more packetloss and then decrease it a little more to be on the safe side
+- Test again. Let it run for an hour, you should see almost zero packetloss. Also check for heat, if the dongles get too hot, they will either reduce transmit power or produce packetloss.

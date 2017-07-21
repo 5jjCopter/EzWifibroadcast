@@ -1,5 +1,8 @@
 ## This page will help you customize your ez wifibroadcast distribution to better suit your needs
 
+### Tuning the latency
+One of the users have spend some time and effort on tuning his setup for low latency. You can read more about his setup and findings in [this Issue](bortek/EZ-WifiBroadcast/issues/27).
+
 ### Partition expansion
 To expand your tiny filesystem to fit all your sd card
 type the following commands 

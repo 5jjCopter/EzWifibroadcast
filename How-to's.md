@@ -10,7 +10,7 @@
 
 - If you have some other means of transmitting the telemetry to the ground (e.g. an LRS with serial downlink or 3DR dongles) choose `TELEMETRY_TRANSMISSION=external` to receive the telemetry stream on the ground Pi serial port. If using external telemetry transmission, also configure `EXTERNAL_TELEMETRY_SERIALPORT_GROUND=` and `EXTERNAL_TELEMETRY_SERIALPORT_GROUND_BAUDRATE=`
 
-NOTE: Before Release 1.6 there is a bug and a workaround that can (but not necessarily will) cause telemetry data corruption. Read [this](https://github.com/bortek/EZ-WifiBroadcast/issues/31)fir details
+NOTE: Before Release 1.6 there is a bug and a workaround that can (but not necessarily will) cause telemetry data corruption. Read [this](https://github.com/bortek/EZ-WifiBroadcast/issues/31) for details.
 
 ### 2. Configure telemetry protocol and OSD options in osdconfig.txt (only on the RX)
 

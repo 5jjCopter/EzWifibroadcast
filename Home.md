@@ -4,9 +4,9 @@
 ### Download
 These are direct download links to images.  
 
-Release candidate: [EZ-Wifibroadcast-1.6RC2.zip on Freehoster](https://en.file-upload.net/download-12774875/EZ-Wifibroadcast-1.6RC2.zip.html)
+Release candidate: v1.6RC2 [EZ-Wifibroadcast-1.6RC2.zip on Freehoster](https://en.file-upload.net/download-12774875/EZ-Wifibroadcast-1.6RC2.zip.html)
 
-Release candidate: [ez16rc1.zip on Freehoster](https://en.file-upload.net/download-12769426/ez16rc1.zip.html)
+Release candidate: v1.6RC1 [ez16rc1.zip on Freehoster](https://en.file-upload.net/download-12769426/ez16rc1.zip.html)
 
 Stable version: v1.5 [EZ-Wifibroadcast-1.5.zip on Gdrive](https://drive.google.com/uc?id=0B8ke2EKPqvORdDNkSTdwNDZQZnc&export=download) or [from mirror](https://1drv.ms/u/s!AICL89CL69nXhpsK)
 

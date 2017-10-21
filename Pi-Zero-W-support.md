@@ -10,3 +10,8 @@ To make EZ-Wifibroadcast work with your Pi0 W:
 
 
 Please note: The onboard wifi chip on the Pi Zero W is not supported. Maybe in a future release.
+
+
+Edit:
+
+EZ-Wifibroadcast v1.6 should work out-of-the-box with the Pi0W now, please test!

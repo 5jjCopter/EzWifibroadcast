@@ -1,5 +1,38 @@
 ## Release notes
 
+### EZ-Wifibroadcast 1.6 RC1 (release candidate)
+- Kernel, Pi firmware and Pi userland updated (Kernel 4.9.35, Raspbian 2017-07-05, Pi0W should work out-of-the-box)
+- Latency lowered slightly (Kernel 4.9.35 improves scheduling and jitter, wbc rx -d 1 works again)
+- Mavlink R/C support (thanks dino_de!)
+- Graupner/JR SUMD R/C support
+- Flysky IBUS R/C support
+- Multiplex SRXL / XBUS Mode B R/C support
+- Support for RTL8192CU cards added (only RX, not tested, for experimenting)
+- Support for RTL8812AU cards added (only RX, not tested, for experimenting)
+- Bitrate measuring on TX, simplifies FEC and bitrate settings, allows for higher bitrates
+- Bitrate display on RX, shows bitrate set on TX as well as live received bitrate on RX
+- New downlink and Uplink tx/rx should improve telemetry down- and uplink considerably
+- Frame header format optimized for minimum overhead (makes the frame format incompatible with v1.5)
+- OSD renders only (and instantly) when receiving attitude frames, artificial horizon is smoother and causes less CPU/GPU load
+- More efficient tx_rawsock using raw sockets instead of libpcap injection, higher bitrates possible with Pi0/1
+- CPU clock lowered to 900Mhz and overvoltage lowered to "3" for less heat and power consumption
+- Atheros short preamble mode: Improves CTS protection and R/C link, allows to use 11 Mbit datarate "long-range" mode
+- Atheros medium access parameter THRESH62 lowered from 28 to 24: should improves R/C link
+- Atheros medium access parameters SIFS, AIFS, CWMIN, CWMAX, etc. are configurable now
+- Increased max. framesize, Atheros wbc payload 1550 bytes, Ralink wbc payload 2278 bytes
+- Support for 802.11b 11mbit and 5.5mbit modes added (lower quality/higher range)
+- Support for CDC ACM added (for Pixhawk USB port)
+- Support for BCM2385 I2C and Toshiba TC358743 added (not tested, for B101 experimenting)
+- Made video UDP port configurable (for Missionplanner)
+- Cosmetic fix: cat write error message removed when ramdisk full
+- Cosmetic fix: socat init messages removed
+- Cosmetic fix: German "O" for "Ost" in OSD compass changed to english "E" for "East" 
+- Cosmetic fix: OSD RC_RSSI option re-named to WBC_RC_RSSI
+- Bug fix: Serial telemetry data corruption due to wrong stty settings
+- Bug fix: Pi1A+ turned out not to be 100% stable at 1000MHz CPU clock
+- Bug fix: serial port (for telemetry) did not work on the new Pi0W
+
+
 ### EZ-Wifibroadcast 1.5
 - New feature: Bi-directional Mavlink telemetry support (both over wbc and external devices e.g. 3DR dongles or LRS with telemetry) (untested!)
 - New feature: Telemetry output on Rx Pi serialport for antenna tracker etc.

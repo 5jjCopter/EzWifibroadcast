@@ -18,4 +18,5 @@ YOU NEED TO SUPPLY BOTH THE RASPBERRY PI AND THE WIFI CARDS WITH STABLE 5 VOLTS!
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi0-Wiring-small.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi3-Wiring-small.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/052nh-wiring.jpg)
+![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi1B-wiring.jpg)
 

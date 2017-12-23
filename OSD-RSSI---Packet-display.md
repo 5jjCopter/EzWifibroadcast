@@ -13,4 +13,4 @@
 - The two dbm and "Lost" displays in the upper right corner show signalstrength and packetloss for R/C and telemetry uplink.
 
 
-- The upper bitrate display shows the bitrate that raspivid has been set to. Number in parentheses is the maximum available bitrate that was measured. With default settings, this should show something around 6000 (9500) kbit. The lower bitrate display is the actual measured bitrate at the RX.
+- The upper bitrate display shows the bitrate that raspivid has been set to. Number in parentheses is the maximum available bitrate that was measured. With default settings, this should show something around 6000 (9500) kbit. The lower bitrate display is the actual (live) measured bitrate at the RX.

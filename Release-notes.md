@@ -1,5 +1,34 @@
 ## Release notes
 
+
+### EZ-Wifibroadcast 1.6 RC3 (release candidate)
+- New feature: RSSI/packetloss graphing and logging
+- New feature: integrated airodump-ng wifi scanner
+- Increased wifibroadcast-1.txt GPIO config combinations from 8 to 16
+- Reverted back to stty serialport initialisation to fix issue with heartbeats getting lost
+- Rewritten telemetry rx: Should fix out-of-order delivery and packetloss for telemetry
+- Changed manual bitrate setting to kbit/s instead of bit/s
+- Measured bitrate display in video stream can be disabled in wifibroadcast-1.txt
+- Added debug option to wifibroadcast-1.txt
+- Removed confusing bitrate display during startup on RX
+- Changed txpower for Atheros back to 58 (was 56 accidentally in 1.6RC1 and RC2)
+- Changed Atheros Thresh62 parameter to 26
+- Added configurable mavlink forwarder: cmavnode or mavlink-routerd
+- cmavnode.conf moved to boot partition for easier access
+- Display error message in case of syntax errors in osdconfig.txt
+- Added various USB webcam drivers to the kernel (for experimenting)
+- raspivid default intrarefresh changed to "-if both"
+
+
+
+### EZ-Wifibroadcast 1.6 RC2 (release candidate)
+- telemetry downlink fixes
+- replaced cmavnode with mavlink-routerd (supports UDP and TCP)
+- more debug logging
+- Version on boot-up and in readme.txt updated to reflect rc status
+
+
+
 ### EZ-Wifibroadcast 1.6 RC1 (release candidate)
 - Kernel, Pi firmware and Pi userland updated (Kernel 4.9.35, Raspbian 2017-07-05, Pi0W should work out-of-the-box)
 - Latency lowered slightly (Kernel 4.9.35 improves scheduling and jitter, wbc rx -d 1 works again)

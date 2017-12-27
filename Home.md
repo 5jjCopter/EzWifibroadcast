@@ -97,6 +97,6 @@ Please note that the monitor has to be connected and powered before the Pi is po
 Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.
 
 ### Notes
-TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles, higher resolution/bitrate, or more error correction or smaller packet sizes will most likely not work. Even if it seems to be working on first look, it can happen that latency suddenly raises if the CPU is loaded to much (in situations with high bitrate, like fast scene changes). Although many people successfully use a Pi Zero as a TX, if space and weight is no issue, consider using a Pi2 or 3 for TX.
+TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles and bitrates above about 8Mbit/s (depending on FEC settings etc.) will not work.
 
 RX: Raspberry Pi1 and Pi Zero are not supported anymore from version 1.3 on. Use a Pi2 or Pi3.

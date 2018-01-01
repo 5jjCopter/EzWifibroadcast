@@ -13,7 +13,8 @@ YOU NEED TO SUPPLY BOTH THE RASPBERRY PI AND THE WIFI CARDS WITH STABLE 5 VOLTS!
 - make sure the camera cable is properly seated on both ends
 - secure the camera cable with some tape or a drop of hotglue
 - make sure the Raspberry and wifi cards don't get hot, consider heatsinks
-
+- Keep the antenna away from the camera and camera cable
+- The Raspberry (and/or maybe the cam and it's cable, needs to be further investigated) seem to affect both 433Mhz,868Mhz LRS and also GPS reception, consider some seperation or shielding of the components
 
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi0-Wiring-small.jpg)
 ![](https://raw.githubusercontent.com/bortek/EZ-WifiBroadcast/master/wiki-content/Pi3-Wiring-small.jpg)

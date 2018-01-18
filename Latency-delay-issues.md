@@ -37,6 +37,6 @@ In general, there are two options to solve this issue:
 - Keep FEC settings and BITRATE_PERCENT the same, but increase wifi bitrate. This way, the same amount of video data will be transferred, but with less channel usage due to the higher bitrate. Obviously, this will decrease range.
 
 2) Don't reduce channel usage time, just transmit anyway, basically step over the other traffic. The "not-so-nice-way". Not preferred, as it only works with Atheros and obviously it will affect others more and also because it will also increase collisions (and thus glitches) for wifibroadcast transmission.
-- Set thresh62 in /etc/modprobe.d/ath9k_hw.conf to a higher value, try 38. Set aifs=0 cwmin=0 cwmax=0.
+- Set thresh62 in /etc/modprobe.d/ath9k_hw.conf to a higher value, try 38. Set aifs=0 cwmin=0 cwmax=0 slottime=3.
 If you do this, you will probably also notice increased packetloss and badblocks, you can counter-act this to an extent by increasing the FEC "window-size", try
 12/6/1024 FEC for example.

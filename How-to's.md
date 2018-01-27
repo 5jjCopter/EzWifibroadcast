@@ -58,7 +58,7 @@ The GPIO pins are being checked during boot-up, to select a different configurat
 
 - Connect your android smartphone or tablet via USB to the RX Pi.
 - Enable USB-Tethering in the options of your smartphone (note, some smartphones don't support this out-of-the box or seem to have this function disabled, you may need a 3rd party app to make USB-Tethering work with your device)
-- Start FPV_VR app or other app (Tower App, QGroundcontrol etc.) on android device (don't forget to set `FORWARD_STREAM=raw` on the RX Pi when using FPV_VR app and to "rtp" when using the other apps)
+- Start FPV-VR 2018 app or other app (Tower App, QGroundcontrol etc.) on android device (don't forget to set `FORWARD_STREAM=raw` on the RX Pi when using FPV-VR app and to "rtp" when using the other apps)
 
 If you also have a HDMI monitor connected to the RX, you should see a short message at the bottom of the screen when the android device has been detected.
 
@@ -125,8 +125,8 @@ Connect the serial port RX pin of your flight control to the serial port TX pin 
 Connect your device either via USB Tethering, Wifi-Hotspot or Ethernet-Hotspot to the Wifibroadcast RX.
 
 ### Android
-[FPV_VR app in Playstore](https://play.google.com/store/apps/details?id=com.constantin.wilson.FPV_VR)
-[Usage information and source code](https://github.com/Consti10/FPV_VR)
+[FPV_VR app in Playstore](https://play.google.com/store/apps/details?id=constantin.fpv_vr.wifibroadcast)
+[Usage information and source code](https://github.com/Consti10/FPV_VR_2018)
 Set `FORWARD_STREAM=raw` in wifibroadcast-1.txt to send a raw h264 stream to the FP_VR app.
 
 [Tower app](https://play.google.com/store/apps/details?id=org.droidplanner.android)

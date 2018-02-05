@@ -42,14 +42,14 @@ For Cleanflight/Betaflight/Inav/etc.: Do not send an inverted serial signal, the
 
 To quickly change settings on the field, eight different configuration profiles selectable via GPIO pins are supported. This way, DIP switches, 3-way switches or jumpers can be used to change configuration, similar to analog gear.
 
-3 GPIO pins give 8 possible combinations, from wifibroadcast-1.txt to wifibroadcast-8.txt. Just copy over the existing configfile with a new number and make desired changes (e.g. frequency, or camera settings) there. If you want to have a means to know which profile is selected on the TX, you can use the raspivid annotation parameters under EXTRAPARAMS to let raspivid insert the profile number or whatever text you would like into the video stream. On the RX there is currently no display which profile has been loaded.
+4 GPIO pins give 16 possible combinations, from wifibroadcast-1.txt to wifibroadcast-16.txt. Just copy over the existing configfile with a new number and make desired changes (e.g. frequency, or camera settings) there. If you want to have a means to know which profile is selected on the TX, you can use the raspivid annotation parameters under EXTRAPARAMS to let raspivid insert the profile number or whatever text you would like into the video stream. On the RX there is currently no display which profile has been loaded.
 
 The GPIO pins are being checked during boot-up, to select a different configuration, simply change the DIP-switch (and power-off and on again if the system was already running during the DIP switch change).
 
 
 ### Wiring:
 
-![DIP-switch wiring](https://github.com/bortek/EZ-WifiBroadcast/blob/master/wiki-content/CaptureDipSwitch.JPG)
+![DIP-switch wiring](https://github.com/bortek/EZ-WifiBroadcast/blob/master/wiki-content/Dipswitch.JPG)
 
 
 

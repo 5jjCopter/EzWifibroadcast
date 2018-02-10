@@ -74,7 +74,14 @@ Note: To not interfere with each other, there must be about 130Mhz of "space" be
 
 Other external cards have not been tested much, but Ralink based sticks seem to work for 5Ghz so far.
 
-Please also note, that "normal" Wifi transmission is by far not as stable as wifibroadcast transmission, so be aware that there might be stuttering or badblocks, disconnects or other typical wifi issues when using the Wifi Hotspot. If you need a reliable video stream on the android device, consider using USB Tethering.
+Please also note, that "normal" Wifi transmission is by far not as stable as wifibroadcast transmission, so be aware that there might be stuttering or badblocks, disconnects or other typical wifi issues when using the Wifi Hotspot. If you need a reliable video stream on the android device, consider using the Ethernet Hotspot or USB Tethering.
+
+
+
+## Using the Ethernet-Hotspot functionality
+
+- Set `ETHERNET_HOTSPOT=Y`in wifibroadcast-1.txt to enable the Ethernet hotspot
+- Connect a RJ-45 cable to the Pi Ethernet port, if you also have a HDMI monitor connected, you should see a message that the device has been detected.
 
 
 ## Ground recording (Video/telemetry/screenshots)

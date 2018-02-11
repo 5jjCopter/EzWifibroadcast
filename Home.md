@@ -2,7 +2,9 @@
 **Please read through this page and other sub-pages before you start asking questions on the forum.**
 
 ### Download
-These are direct download links to images.  
+These are direct download links to images.
+
+Release candidate: v1.6RC4 [EZ-Wifibroadcast-1.6RC4.zip on Google Drive](https://drive.google.com/open?id=1jg-V4uSFQtPljdrRjgkrIdidkTj8kHjm)
 
 Release candidate: v1.6RC3 [EZ-Wifibroadcast-1.6RC3.zip on Google Drive](https://drive.google.com/open?id=1gcVUFHVF88LHg6KTvCBZtw5CV_btmbFg) or [from mirror on Freehoster (beware of ads)](https://www.file-upload.net/en/download-12889765/EZ-Wifibroadcast-1.6RC3.zip.html)
 

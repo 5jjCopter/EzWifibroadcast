@@ -42,27 +42,26 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 
 ### Features
 (applicable to the latest release)
-- Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
-- For Pi Zero W support see here: https://github.com/bortek/EZ-WifiBroadcast/wiki/Pi-Zero-W-support
+- Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Pi Zero W, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps
 1296x972p 42fps
 1640x922p 40fps
 1920x1080p 30fps
 - max. possible video bitrate about 12Mbit
-- Latency ~140ms with 720p 48fps default settings, minimum possible latency roughly around 110ms
+- Latency ~125ms with 720p 48fps default settings, minimum possible latency roughly around 110ms
 - Support for 2.3/2.4/2.5Ghz bands and 5.2Ghz to 5.8Ghz bands
 - 2.4Ghz on 3dbi omni antennas: ~1km range with ~70mw wifi sticks, about 2km with ~300mW high-power cards
 - 5Ghz on 3dbi omni antennas: ~250m range with 25mW wifi sticks, ~1km range with ~300mW high-power cards
 - Configuration can be done from Windows, no Linux knowledge required
 - Supports different configuration profiles selectable on the field via jumpers or DIP switches
 - Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
-- Bi-directional mavlink telemetry support (untested, not working reliably at the moment)
-- Support for video and telemetry inside Tower App and QGroundcontrol etc.
+- Bi-directional mavlink telemetry support
+- Support for video and telemetry inside Tower App and QGroundcontrol, Mission Planner
 - Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
 - 2 wifi sticks transmit diversity on two different frequencies (Ralink cards only)
 - 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink
-- Integrated OSD with support for Mavlink (not bi-directional), Frsky, LTM
+- Integrated OSD with support for Mavlink, Frsky, LTM
 - .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 - Quick startup, about 10 seconds until video is shown
 - No issues as with standard wifi, no disconnection, video freeze etc, video will quickly recover
@@ -86,14 +85,15 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.
  - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
  - Goggles One 1080p display (needs to be set to fixed 1080p resolution in config.txt)
- - Headplay HD
- - Fatshark HD
+ - Headplay HD (1280x800)
+ - Fatshark Base HD (1280x720)
+ - Fatshark HD1/2/3 (800x600)
  - Yuneec Skyview
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define you monitor resolution in config.txt statically though to be able to plug you monitor after the Pi is already running.
 
 ### Tested Raspberry Pi Hardware
-- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Odroid-W, Pi A+ (the new with square footprint)
+- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Pi Zero W, Odroid-W, Pi A+ (the new with square footprint)
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 
 Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.

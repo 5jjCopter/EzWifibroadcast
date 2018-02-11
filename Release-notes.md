@@ -1,7 +1,23 @@
 ## Release notes
 
+### 2018-02-11 EZ-Wifibroadcast 1.6 RC4 (release candidate)
+- Live CPU load and temperature display for both TX and RX Pi
+- Live display of injection time and errors
+- Telemetry rx efficiency and robustnuss improvements
+- Transmit power configuration simplified
+- RSSI/packetloss and CPU load/temperature forwarding for FPV_VR 2018 app added (experimental, not complete yet)
+- Bugfix: Missing mavlink messages due to outdated Mavlink library
+- Bugfix: RTL8812 cards did not work for Wifihotspot in 1.6RC3 due to missing driver
+- Bugfix: Mediatek MT7601 cards did not work in 1.6RC1-1.6RC3 due to missing driver
+- Moved settings in Wifibroadcast-1.txt to the correct section (TX/RX/COMMON)
+- SPI userspace device modules added to kernel (for experimenting)
+- Debug log feature for TX (writes debug.txt to sdcard)
+- More telemetry debug logging
+- Undervoltage warnings for RX added, warnings improved for TX
+- Measured kbitrate display moved to OSD to keep video stream clean
+- Various smaller code and script cleanups
 
-### EZ-Wifibroadcast 1.6 RC3 (release candidate)
+### 2017-12-27 EZ-Wifibroadcast 1.6 RC3 (release candidate)
 - New feature: RSSI/packetloss graphing and logging
 - New feature: integrated airodump-ng wifi scanner
 - Increased wifibroadcast-1.txt GPIO config combinations from 8 to 16

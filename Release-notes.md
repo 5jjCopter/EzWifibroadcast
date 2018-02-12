@@ -1,5 +1,19 @@
 ## Release notes
 
+### 2018-02-12 EZ-Wifibroadcast 1.6 RC5 (release candidate)
+- Bugfix: Telemetry TX/RX in 1.6RC4 stopped after 65535 packets
+- Bugfix OSD: Home arrow pointing in wrong direction
+- OSD: Position of all OSD elements can be configured
+- OSD: Text positioning/scaling improved for lower resolutions
+- OSD: Smoother AHI, compass, speed/alt ladders and home arrow
+- OSD: Home direction indicator added to compass ladder
+- OSD: Mavlink RC RSSI display added
+- OSD: Mavlink disarm/arm display added
+- OSD: Mavlink flightmode display added
+- OSD: Mavlink airspeed, baroalt and climb m/s display added
+(Thanks to basti, schs, fritzwalter123)
+
+
 ### 2018-02-11 EZ-Wifibroadcast 1.6 RC4 (release candidate)
 - Live CPU load and temperature display for both TX and RX Pi
 - Live display of injection time and errors

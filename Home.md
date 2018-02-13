@@ -6,7 +6,7 @@ These are direct download links to images.
 
 Release candidate: v1.6RC5 [EZ-Wifibroadcast-1.6RC5.zip on Google Drive](https://drive.google.com/file/d/18Q9vlwughGxd8plWHXzevAyhqgZdQ7SA/view?usp=sharing) or [from mirror on Freehoster (beware of ads)](https://www.file-upload.net/en/en/download-12976556/EZ-WifiBroadcast-1.6RC5.zip.html)
 
-Release candidate: v1.6RC4 [EZ-Wifibroadcast-1.6RC4.zip on Google Drive](https://drive.google.com/open?id=1jg-V4uSFQtPljdrRjgkrIdidkTj8kHjm)
+Release candidate: v1.6RC4 [EZ-Wifibroadcast-1.6RC4.zip on Google Drive](https://drive.google.com/open?id=1jg-V4uSFQtPljdrRjgkrIdidkTj8kHjm) or [from mirror on Freehoster (beware of ads)](https://en.file-upload.net/en/en/download-12976560/EZ-Wifibroadcast-1.6RC4.zip.html)
 
 Release candidate: v1.6RC3 [EZ-Wifibroadcast-1.6RC3.zip on Google Drive](https://drive.google.com/open?id=1gcVUFHVF88LHg6KTvCBZtw5CV_btmbFg) or [from mirror on Freehoster (beware of ads)](https://www.file-upload.net/en/download-12889765/EZ-Wifibroadcast-1.6RC3.zip.html)
 

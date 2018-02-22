@@ -21,21 +21,21 @@ camera parameters:
 
 -ev, --ev     		: Set EV compensation
 
--ex, --exposure 	: Set exposure mode (auto,night,nightpreview,backlight,spotlight,sports,snow,beach,verylong,fixedfps,antishake,fireworks)
+-ex, --exposure 	: Set exposure mode (auto, night,nightpreview,backlight,spotlight,sports,snow,beach,verylong,fixedfps,antishake,fireworks)
 
--awb, --awb    		: Set AWB mode (off,auto,sun,cloud,shade,tungsten,fluorescent,incandescent,flash,horizon)
+-awb, --awb    		: Set AWB mode (off,auto,sun,cloud,shade,tungsten,fluorescent,incandescent,flash,horizon) Note: When set to "off" -awbg MUST also be set
+
+-awbg --awbg            : Set manual AWB gains when -awb is set to "off", for example: "-awbg 1.6,1.5"
 
 -mm, --metering 	: Set metering mode (average,spot,backlit,matrix)
+
+-rot     		: Rotate picture in degrees. Increases latency, do not use for upside-down flipping, use "-vf -hf" instead if you want to mount the camera upside down.
 
 -hf, --hflip   		: Set horizontal flip
 
 -vf, --vflip  		: Set vertical flip
 
--rot 180  		: Rotate 180 degrees, if the camera is mounted upside down
-
 -ss, --shutter 		: Set shutter speed in microseconds
-
--awbg, --awbgains       : Set AWB gains - AWB mode must be off
 
 -drc, --drc    		: Set DRC Level (off,low,med,high)
 

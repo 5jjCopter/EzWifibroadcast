@@ -44,7 +44,7 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 
 ### Features
 (applicable to the latest release)
-- Supports Pi1B+, Pi2B+, Pi3B+, Pi Zero, Pi Zero W, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
+- Supports Pi1B+, Pi2B, Pi3B (NOT the new Pi3B+), Pi Zero, Pi Zero W, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps
 1296x972p 42fps

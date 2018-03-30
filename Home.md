@@ -44,7 +44,7 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 
 ### Features
 (applicable to the latest release)
-- Supports Pi1B+, Pi2B, Pi3B (NOT the new Pi3B+), Pi Zero, Pi Zero W, Odroid-W, Pi A+, Pi V1 and V2 cam (RX Pi needs to be atleast a Pi2)
+- Supports Pi A+, Pi1B+, Pi2B, Pi3B (NOT the new Pi3B+), Pi Zero, Pi Zero W, Odroid-W, Pi V1 and V2 cam (NOTE: RX Pi needs to be atleast a Pi2)
 - max. possible resolutions (depending on cam used):
 1280x720p 60fps
 1296x972p 42fps
@@ -58,11 +58,11 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - Configuration can be done from Windows, no Linux knowledge required
 - Supports different configuration profiles selectable on the field via jumpers or DIP switches
 - Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
-- Bi-directional mavlink telemetry support
+- Bi-directional mavlink telemetry support (uplink not 100% compatible with all FCs yet)
 - Support for video and telemetry inside Tower App and QGroundcontrol, Mission Planner
 - Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
-- 2 wifi sticks transmit diversity on two different frequencies (Ralink cards only)
-- 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink
+- 2 wifi sticks transmit diversity on two different frequencies for bulletproof videolink
+- 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink (or 2x Atheros and 2x Ralink)
 - Integrated OSD with support for Mavlink, Frsky, LTM
 - .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
 - Quick startup, about 10 seconds until video is shown
@@ -71,18 +71,17 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - Handling similar to analog gear, just switch on and fly
 - Smooth and stutter-free video (thanks, mmormota)
 - Video reception is very stable even in difficult multipathing environments, no constant glitching like with analog
-- No expensive, large and damage-prone circular antennas required
 - OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 - Debug logs and screenshot will be saved to sdcard in case of errors
-- RC over wifibroadcast via Joystick (Atheros only, not much tested yet)
+- Low-latency/high update-rate RC over wifibroadcast via Joystick (Atheros only)
 
 
 ### Wifi cards and dongles
 There is a list of Wifi cards and dongles on [this Wiki page](https://github.com/bortek/EZ-WifiBroadcast/wiki/List-of-Wifi-cards-and-doungles)
 
 ### Screens/Monitor
-Virtually any screen/monitor connected to the HDMI port on your Pi should work. Besides that the following displays have been tested and work:
+Virtually any screen/monitor connected to the HDMI port on your Pi will work. Besides that the following displays have been tested and work:
  - Samsung 32 inch TV connected via HDMI to Pi.
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.
  - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
@@ -92,7 +91,7 @@ Virtually any screen/monitor connected to the HDMI port on your Pi should work. 
  - Fatshark HD1/2/3 (800x600)
  - Yuneec Skyview
 
-Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define you monitor resolution in config.txt statically though to be able to plug you monitor after the Pi is already running.
+Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define your (custom) monitor resolution in config.txt statically though to be able to connect the monitor after the Pi is already running.
 
 ### Tested Raspberry Pi Hardware
 - Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Pi Zero W, Odroid-W, Pi A+ (the new with square footprint)
@@ -101,6 +100,6 @@ Please note that the monitor has to be connected and powered before the Pi is po
 Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.
 
 ### Notes
-TX: The CPUs on the Raspberry Pi 1 and Pi Zero are more or less maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles and bitrates above about 8Mbit/s (depending on FEC settings etc.) will not work.
+TX: The CPUs on the Raspberry Pi 1 and Pi Zero are around 75% maxxed out with standard settings (6Mbit bitrate, 8/4/1024 FEC). Two TX dongles and bitrates above about 9Mbit/s (depending on FEC settings etc.) will not be possible.
 
 RX: Raspberry Pi1 and Pi Zero are not supported anymore from version 1.3 on. Use a Pi2 or Pi3.

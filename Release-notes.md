@@ -1,5 +1,35 @@
 ## Release notes
 
+### 2018-04-02 EZ-Wifibroadcast 1.6 RC6 (release candidate)
+- Added warning message when using unsupported or experimental wifi chipsets
+- Uplink RSSI info transmission robustness improved
+- Bugfix: Wrong size for memcpy in rx_rc_telemetry (thanks dino_de)
+- Bugfix: MT7601 chipset support
+- Bugfix: Telemetry uplink "external" (for 433mhz mavlink radios or LRS mavlink uplink) should work now
+- Bugfix: OSD did not start when disabling "SYS" display in config
+- Bugfix: OSD did not start when selecting LTM or FRSKY telemetry
+- Bugfix: OSD did not re-appear after saving video to USB memory stick
+- OSD: Smartport telemetry protocl support added (thanks markus1234)
+- OSD: Higher rendering speed, less CPU utilization and custom fonts due to Paeryn's OpenVG library
+- OSD: Correct text and graphics scaling for all display resolutions from 640x480-1920x1080, 4:3,5:4,16:9,16:10
+- OSD: 50+ different TrueType fonts to choose from, custom fonts can be added
+- OSD: Fill- and outline-color can be configured as well as transparency
+- OSD: Outline thickness can be configured
+- OSD: Configurable global scaling as well as scaling of every element
+- OSD: Element text replaced by symbols
+- OSD: RSSI display changes: Smoother/less "quirky" display of RSSI
+- OSD: RSSI display changes: Display now shows lowest value (easier to detect end of range, more safe)
+- ODS: Uplink and R/C RSSI/packetloss display combined
+- OSD: Packetloss counters get reset with TX restart
+- OSD: Graphical packetloss/FEC display
+- OSD: Armed/disarmed state integrated into flight mode display
+- OSD: Elements now show red/green status (e.g. home symbol is red and turns green when home location is set)
+- OSD: Heading data source for compass and home arrow configurable (GPS/course-over-ground or magnetometer)
+- OSD: LTM home position taken from LTM O-Frame
+- OSD: Various smaller changes
+- OSD: Various code cleanups
+
+
 ### 2018-02-12 EZ-Wifibroadcast 1.6 RC5 (release candidate)
 - Bugfix: Telemetry TX/RX in 1.6RC4 stopped after 65535 packets
 - Bugfix OSD: Home arrow pointing in wrong direction

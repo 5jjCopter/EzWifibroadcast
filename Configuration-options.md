@@ -25,10 +25,10 @@ The following frequencies are supported:
 5745, 5765, 5785, 5805, 5825
 
 
-2.3Ghz and 2.5-2.7Ghz band only works with Atheros cards. 2.5-2.7Ghz is untested. 4.9Ghz band is only supported by CSL300Mbit Ralink 5572 dongles. Other Ralink cards may support these channels and also additional overlapping channels in the 5Ghz band, you may want to check with "iw list". Check your local regulations before using channels outside the 2.4Ghz band.
+2.3Ghz and 2.5-2.7Ghz band only works with Atheros cards. Frequencies above 2512MHz are not recommended as the output power and sensitivity is greatly reduced, only useable for short-range applications. 4.9Ghz band is only supported by CSL300Mbit Ralink 5572 dongles. Check your local regulations and laws before setting frequencies!
 
 ### FREQSCAN=
- Set to "Y" on the RX for auto-scanning. Frequency still has to be set on TX! **Feature might be buggy or not work at all!**
+Set to "Y" on the RX for auto-scanning. Frequency still has to be set on TX! **Feature might be buggy or not work at all!**
 
 
 
@@ -45,54 +45,67 @@ Wifi card MAC addresses and frequency for the TX wifi cards need to be set here 
 ### MAC_RX[0]= / FREQ_RX[0]=
 Wifi card MAC addresses and frequency for the RX wifi cards need to be set here when dual TX mode is enabled. Please note that counting starts with index 0. Maximum four cards supported for RX (Index 0-3)
 
+### DATARATE=
+Wifi Datarate. Lower settings yield higher range and vice versa. Default is "4" which gives about 6Mbit video bitrate with default settings and no CTS protection. For long-range application, use "2" or "1", if you want higher quality use "5" or "6".
+1=5.5Mbit, 2=11Mbit, 3=12Mbit, 4=19.5Mbit/18Mbit, 5=24Mbit, 6=36Mbit
+
 
 ### VIDEO_BLOCKS= / VIDEO_FECS= / VIDEO_BLOCKLENGTH=
 These parameters allow for a trade-off between link-resiliency, latency and achievable data rate (and thus quality).
 
 See here for some in-depth explanation: https://befinitiv.wordpress.com/2015/07/19/forward-error-correction-for-wifibroadcast/
 
-If using Pi2 or Pi3 as TX, you can try 12/6/768 or 16/8/512 (with about same latency as 8/4/1024) If latency doesn't matter for you, maybe try something like 24/12/768.
+If using Pi2 or Pi3 as TX, you can try 12/6/768 or 16/8/512 (with about same latency as 8/4/1024) for higher resiliency against interference. If latency doesn't matter for you, maybe try something like 24/12/768.
 
-If using two TX cards in alternate mode, you can try 12/12/512 for fully redundant link (will allow for about 8Mbit video bitrate) or 12/6/768 for higher bandwidth link (will allow for about 11-12Mbit video bitrate)
-
-
-
-### CTS_PROTECTION=
-Set this to "Y" to enable CTS protection. Enable this in areas with lots of Wifi traffic and when using 
-the Wifibroadcast R/C feature.
-
-### BITRATE=
-Video bitrate. Lower settings yield higher range and vice versa.
-1=2.5Mbit, 2=4.5Mbit, 3=6Mbit, 4=8.5Mbit, 5=11.5Mbit
 
 ### FPS=
 Choose between 30, 40, 48, 59.9
 
 ### TELEMETRY_TRANSMISSION=wbc
 Telemetry transmission method:
-wbc = use wifibroadcast as telemetry up/downlink
-external = use external means as telemetry up/downlink (LRS or 3DR dongles)
-if set to external, set serialport to which LRS or 3DR dongle is connected both on ground and air pi
+"wbc" = use wifibroadcast as telemetry up/downlink
+"external" = use external means as telemetry up/downlink (LRS or 3DR dongles)
+If set to "external", set serialport to which LRS or 3DR dongle is connected on ground Pi, see options below
+
+### EXTERNAL_TELEMETRY_SERIALPORT_GROUND=, EXTERNAL_TELEMETRY_SERIALPORT_GROUND_BAUDRATE=
+Serial port and baudrate on the Ground Pi when using TELEMETRY_TRANSMISSION=external. Default /dev/serial0 for on-board Pi serialport, or set to "/dev/ttyUSB0" for external USB-to-serial adapter.
+
+### ENABLE_SERIAL_TELEMETRY_OUTPUT=N
+Set to "Y" to enable output of telemetry to serialport on ground Pi (for antenna tracker etc.)
+
+### TELEMETRY_OUTPUT_SERIALPORT_GROUND=, TELEMETRY_OUTPUT_SERIALPORT_GROUND_BAUDRATE=
+Serial port and baudrate on the Ground Pi when using ENABLE_SERIAL_TELEMETRY_OUTPUT=N. Default /dev/serial0 for on-board Pi serialport, or set to "/dev/ttyUSB0" for external USB-to-serial adapter.
 
 ### TELEMETRY_UPLINK=
-Set to "disabled" or "mavlink" for Mavlink (Tower App, Missionplanner, etc.)
+Set to "disabled" or "mavlink" for Mavlink (Tower App, Missionplanner, etc.). Please note: Feature might not work correctly with all GCS Software and/or Flight Control Firmware, will be fixed in the future.
 
 ### ENABLE_RC=
-Set this to "Y" to enable R/C over wifibroadcast. This is not much tested yet. Also see joyconfig.txt for other settings.
+Set this to "mavlink" to enable R/C over wifibroadcast using mavlink protocol, "msp" for MSP protocol, "sumd" for Graupner SUMD, "ibus" for Flysky IBUS, "srxl" for Multiplex SRXL / XBUS Mode B. Set to "disabled" to disable
+Also see joyconfig.txt for other settings.
+
+
+### VIDEO_BITRATE=
+Default setting "auto" for automatic video bitrate measuring is recommended. Only set manual bitrate if you know what you are doing.
+
+
+### BITRATE_PERCENT=65
+if VIDEO_BITRATE above is set to "auto" the videobitrate will be determined by measuring the available bitrate and multiplying it with BITRATE_PERCENT. Depending on channel utilization by other wifi networks you may need to set this to a lower value like 60% to avoid a delayed video stream. On free channels you may set this to a higher value like 70% to get a higher bitrate and thus image quality. Values above 75% are not recommended as this will most certainly delay the videostream in case bitrate fluctuates due to lighting/scene changes.
+
+
+### CTS_PROTECTION=
+Default settings is "AUTO" which will automatically determine if wifi traffic is around. Set this to "Y" to enable CTS protection, "N" to disable. Set this to "Y" in areas with lots of Wifi traffic and when using the Wifibroadcast R/C feature.
 
 ### WIDTH= / HEIGHT=
 Camera image settings.
 Maximum supported resolutions/FPS for V1 cam: 1280x720: 30fps, 48fps. 1920x1080: 30fps
 Maximum supported resolutions/FPS for V2 cam: 1280x720: 30fps, 48fps, 59.9fps. 1640x922: 30fps, 40fps. 1920x1080: 30fps
 
-For higher resolutions, you may also want to increase the bitrate, see BITRATE= option.
-
 
 ### KEYFRAMERATE=
-Lower values mean faster glitch-recovery, but also lower video quality. With fps=48 and keyframerate=5, glitches will stay visible for around 100ms in worst case. Set this higher or lower according to your needs, for fast and low flying you may want a lower value to get faster gltich-recovery. Minimum value is 2.
+Lower values mean faster glitch-recovery, but also lower video quality. With fps=48 and keyframerate=5, glitches will stay visible for around 100ms in worst case. Set this higher or lower according to your needs, for fast and low flying you may want a lower value to get faster glitch-recovery (minimum value is 2). For high and slow flying you can set higher values like 10 or 20 to get better video quality.
 
 ### EXTRAPARAMS=
-Set additional raspivid parameters here
+Set additional raspivid parameters here, see https://github.com/bortek/EZ-WifiBroadcast/wiki/Raspivid-camera-settings-and-parametrs for more info.
 
 
 ### FC_RC_SERIALPORT=
@@ -101,13 +114,10 @@ Serialport to use on the TX Pi for the Multiwii serial protocol R/C connection. 
 ### FC_RC_BAUDRATE=
 Serial port and baudrate (19200 is minimum) to use for the R/C connection between air Pi and flight control
 
-### FC_TELEMETRY_SERIALPORT=
-### FC_TELEMETRY_BAUDRATE=
+### FC_TELEMETRY_SERIALPORT=, FC_TELEMETRY_BAUDRATE=
 Serial port and baudrate to use for the telemetry connection between air Pi and flight control
 Set this to "/dev/serial0" for Pi onboard serial port or  "/dev/ttyUSB0" for USB-to-serial adapter
 
-### RC_TXMODE= / RC_NICS
-TX Mode and wifi cards to use for sending RC, separated by a space when using alternate or duplicate tx mode
 
 ### WIFI_HOTSPOT=
 Set this to "Y" to enable Wifi Hotspot. Default SSID is "EZ-Wifibroadcast", password is "wifibroadcast". See apconfig.txt for configuration. This will forward the received video and telemetry streams to an android device or computer connected to the RX Pi via WiFi. Please note, that you need atleast 120Mhz of space between the hotspot frequency and the video frequency used.
@@ -126,10 +136,28 @@ Set to "Y" to enable periodic screenshots every 10 seconds
 Set to "memory" to use RAMdisk for temporary video/screenshot/telemetry storage. This limits recording time to ~12-14 minutes, but is the safe way. If you need longer recording times, use "sdcard", to use the sdcard as the temporary video storage. Keep in mind though, that this might introduce video stutter and/or bad blocks. **TEST CAREFULLY BEFORE USING!**
 
 ### RELAY=
-set this to "Y" to enable wifibroadcast relay mode. This will forward the received video and telemetry streams to another wifibroadcast RX. Note! Currently, the RSSI display you see on the RX behind the relay is not the RSSI between aircraft and ground, but between relay and rx on the ground!
+set this to "Y" to enable wifibroadcast relay mode. This will forward the received video and telemetry streams to another wifibroadcast RX. Note! Currently, the RSSI display you see on the RX behind the relay is not the RSSI between aircraft and ground, but between relay and rx on the ground! Feature is not much tested and may not work correctly!
 
 ### RELAY_NIC= / RELAY_FREQ= 
 Wifi stick and frequency to use for the relay 
 
+### AIRODUMP=
+Set to "Y" to scan for wifi networks with airodump-ng before starting RX. This will give you an overview of Wifi networks around. Feature is not much tested and may not work correctly!
+
+### AIRODUMP_SECONDS=
+Number of seconds wifi scanner is shown. Minimum recommended scanning time is 25 seconds.
+
 ### QUIET=
 Set this to "Y" to disable text messages about Display and Wifi card setup etc. to get a more "clean" display
+
+### FORWARD_STREAM=
+Set this to "raw" to forward a raw h264 stream to 2nd display devices (for FPV_VR app), to "rtp" to forward RTP h264 stream (for Tower app and gstreamer etc.).
+
+### VIDEO_UDP_PORT=
+UDP port to send video stream to, default 5600.
+
+### MAVLINK_FORWARDER=
+Mavlink forwarder to use. Default "mavlink-routerd", you may want to try "cmavnode" if mavlink telemetry doesn't work correctly for you.
+
+### DEBUG=
+St this to "Y" to enable collection of extra debug logs. If you experience any issues, please reproduce them with debug set to "Y" and plug a USB memory stick afterwards, you will find the debug logs on the memory stick.

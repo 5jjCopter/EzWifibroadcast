@@ -14,19 +14,15 @@ Important: Except for low-power Ralink dongles (see below), there is no need to 
 
 
 ### Setting transmit power
-- Login to the linux console
-- type "rw" to make the filesystem writeable
+- Login to the linux console (see [here](https://github.com/bortek/EZ-WifiBroadcast/wiki/Logging-into-the-linux-console) on how to do that)
 
 Atheros: 
-- Type "mcedit /etc/modprobe.d/ath9k_hw.conf" or "nano /etc/modprobe.d/ath9k_hw.conf" (whichever editor you may prefer)
-
-Change the "txpower" parameter. Maximum value is 63, default is 58.
+- Type e.g. `txpower_atheros 50` to change txpower value to "50". Min. value is 1, max. value is 63, default is 58.
 
 Ralink:
-- Type "mcedit /etc/modprobe.d/rt2800usb.conf" or "nano /etc/modprobe.d/rt2800usb.conf" (whichever editor you may prefer)
+- Type e.g. `txpower_ralink -2` to change txpower value to "-2". Min. value is -5, max. value is 5, default is 0.
 
-Change the txpower parameter. 0 is default, maximum value is 4 (+4db), minimum value is -4 (-4db)
-
+After setting transmit power, type `reboot` to restart and apply settings or `poweroff` if you want to powerdown the Pi.
 
 ### Determining the maximum transmit power settings for yet unknown wifi dongles
 - First, make sure wiring and power supply is good, if not, you _will_ get problems and badblocks

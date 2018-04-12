@@ -27,9 +27,6 @@ Stable version: v1.2 [EZ-wifibroadcast-1.2.zip](https://drive.google.com/uc?id=0
 
 Stable version: v1.0 [ez-wifibroadcast-1.0.zip](https://docs.google.com/uc?id=0B8ke2EKPqvORQU5RYi1EbEpQMUE&export=download)
 
-BETA version (anemos fork based on Stable v1.2): [EZ_wbc_anemos_modified.v1.2beta.zip](https://docs.google.com/uc?id=0Bw6zbFkDkAtKcFNUOENqNzQ3SEk&export=download) 
-
-Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez-wbc1.5-kernel-src.tar.bz2.html
 
 ### Installation / Setup
 - _**IMPORTANT: Read and follow the [wiring instructions](https://github.com/bortek/EZ-WifiBroadcast/wiki/Wiring)**_
@@ -56,24 +53,25 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 - max. possible video bitrate about 12Mbit
 - Latency ~125ms with 720p 48fps default settings, minimum possible latency roughly around 110ms
 - Support for 2.3/2.4/2.5Ghz bands and 5.2Ghz to 5.8Ghz bands
-- 2.4Ghz on 3dbi omni antennas: ~1km range with ~70mw wifi sticks, about 2km with ~300mW high-power cards
-- 5Ghz on 3dbi omni antennas: ~250m range with 25mW wifi sticks, ~1km range with ~300mW high-power cards
+- 2.4Ghz on 3dbi omni antennas: About 1-1.5km range with ~70mw wifi sticks, about 2-3km with ~300mW high-power cards (with default settings, about 50% higher range is possible with lower bitrate "longrange mode")
+- 5Ghz on 3dbi omni antennas: ~250m range with 25mW wifi sticks, about 1km range with ~300mW high-power cards
 - Configuration can be done from Windows, no Linux knowledge required
 - Supports different configuration profiles selectable on the field via jumpers or DIP switches
 - Forwarding of video stream and telemetry data to 2nd display via: USB Tethering, Wifi Hotspot, Ethernet, Wifibroadcast relay mode
 - Bi-directional mavlink telemetry support (uplink not 100% compatible with all FCs yet)
-- Support for video and telemetry inside Tower App and QGroundcontrol, Mission Planner
+- Support for video and telemetry inside Tower App, QGroundcontrol, Mission Planner
 - Fully dynamic and automatic detection of 2nd display, just plug it in or connect via Hotspot and it'll work
 - 2 wifi sticks transmit diversity on two different frequencies for bulletproof videolink
 - 3 wifi sticks receive diversity support for Atheros, 5 wifi sticks receive diversity support for Ralink (or 2x Atheros and 2x Ralink)
-- Integrated OSD with support for Mavlink, Frsky, LTM
+- Integrated high resolution fully customizeable OSD with support for Mavlink, Frsky, LTM, Smartport telemetry
 - .AVI Ground recording, PNG screenshots and telemetry data automatically saved to USB stick
+- Automatic graphing of RSSI, packetloss, video bitrate and other data
 - Quick startup, about 10 seconds until video is shown
 - No issues as with standard wifi, no disconnection, video freeze etc, video will quickly recover
 - Live and responsive RSSI display with defective blocks and packetloss display
 - Handling similar to analog gear, just switch on and fly
 - Smooth and stutter-free video (thanks, mmormota)
-- Video reception is very stable even in difficult multipathing environments, no constant glitching like with analog
+- Video reception is very stable even in difficult multipathing environments, no constant glitching as with analog
 - OSD overlay rendered on the receiver will stay clear and functional even if video is too bad to fly
 - SD card reliability and general robustness tweaks (read-only filesystem, syslogging to SD disabled, etc.)
 - Debug logs and screenshot will be saved to sdcard in case of errors
@@ -84,20 +82,20 @@ Kernel sources from version 1.5: https://en.file-upload.net/download-12557510/ez
 There is a list of Wifi cards and dongles on [this Wiki page](https://github.com/bortek/EZ-WifiBroadcast/wiki/List-of-Wifi-cards-and-doungles)
 
 ### Screens/Monitor
-Virtually any screen/monitor connected to the HDMI port on your Pi will work. Besides that the following displays have been tested and work:
+Virtually any screen/monitor connected to the HDMI port on your Pi will work. Besides that the following displays have been successfully tested:
  - Samsung 32 inch TV connected via HDMI to Pi.
  - Pi Official Screen connected to CSI port on your Pi. Resolution 800x480.
  - An LCD module from old 17 inch laptop with eBay driver [(for example this)](http://www.ebay.com/itm/HDMI-VGA-2AV-Lcd-controller-Board-VS-TY2662-V1-for-LCD-panel-Only-driver-board-/181596796562?hash=item2a48033692:g:TGEAAOSwQJhUdwFZ) using 1920x1080 to HDMI on Pi. Default FPS.
- - Goggles One 1080p display (needs to be set to fixed 1080p resolution in config.txt)
+ - Goggles One (1920x1080) (set to fixed 1920x1080 resolution in config.txt!)
  - Headplay HD (1280x800)
  - Fatshark Base HD (1280x720)
- - Fatshark HD1/2/3 (800x600)
+ - Fatshark HD1/2/3 (800x600) (set to fixed 800x600 resolution in config.txt!)
  - Yuneec Skyview
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define your (custom) monitor resolution in config.txt statically though to be able to connect the monitor after the Pi is already running.
 
 ### Tested Raspberry Pi Hardware
-- Pi 1 B+, Pi2 B+, Pi3 B+, Pi Zero 1.3, Pi Zero W, Odroid-W, Pi A+ (the new with square footprint)
+- Pi1 B+, Pi 1A+, Pi2 B, Pi3 B, Pi Zero 1.3, Pi Zero W, Odroid-W
 - Official Pi V1 Cam ("V1.3" on the PCB), official Pi V2 Cam ("V2.1" on the PCB)
 
 Take a look [at the pictures](https://github.com/bortek/EZ-WifiBroadcast/wiki/Pictures) of the hardware and their weights.

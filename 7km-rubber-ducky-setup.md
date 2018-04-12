@@ -1,0 +1,1 @@
+![](https://github.com/bortek/EZ-WifiBroadcast/blob/master/wiki-content/7km-setup/6B37583E-188E-4DF2-A729-FB993FD4F0BB.jpeg)

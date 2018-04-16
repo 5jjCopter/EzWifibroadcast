@@ -3,9 +3,9 @@ In some cases instead of Pi camera we might want to input the video signal from 
 ## Auvidea B102
 This card is very similar to B101. I have tested it with Pi Zero. It connects directly with supplied cable and works out of the box (tested with EzWFB 1.6RC6 image). See images below. No reconfiguration was need. Just plug and play. Notice though that this applies to GoPro4 and SJcam M10 that I have tested. Unfortunately B102 did not work neither with my Samsung NX500 nor with Canon EOS M cameras. EOS M had an output of 1080i which is not supported by B102. On the other hand nx500 was set to resolution of 1080p which is supported by B102 but the image showen on the display was distorted and flickering. It feels like nx500 has some data being sent in strange or special way which B102 cannot interpret properly.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IBBYN1I1YOU/0.jpg])(https://www.youtube.com/watch?v=IBBYN1I1YOU)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IBBYN1I1YOU/0.jpg)](https://www.youtube.com/watch?v=IBBYN1I1YOU)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K-vXwZFPys4/0.jpg])(https://www.youtube.com/watch?v=K-vXwZFPys4)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/K-vXwZFPys4/0.jpg)](https://www.youtube.com/watch?v=K-vXwZFPys4)
 
 
 ## Auvidea B101

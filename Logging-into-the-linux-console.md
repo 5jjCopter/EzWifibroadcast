@@ -6,6 +6,7 @@ To log into the Linux console, there are three ways:
 - Connect keyboard and monitor to the Pi
 - Press alt-F12 to switch to TTY12
 
+Note: In case you want to login to the RX Pi, while the TX Pi is running, stop the TX Pi first. Otherwise, you'll not be able to see the console because the video is in front of it!
 
 ### 2. Remote login via SSH over ethernet hotspot or wifi hotspot (RX Pi only!)
 - Enable ETHERNET_HOTSPOT and/or WIFI_HOTSPOT in wifibroadcast-1.txt config file

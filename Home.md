@@ -89,8 +89,10 @@ Virtually any screen/monitor connected to the HDMI port on your Pi will work. Be
  - Goggles One (1920x1080) (set to fixed 1920x1080 resolution in config.txt!)
  - Headplay HD (1280x800)
  - Fatshark Base HD (1280x720)
+ - Fatshark HDO (960x720)
  - Fatshark HD1/2/3 (800x600) (set to fixed 800x600 resolution in config.txt!)
  - Yuneec Skyview
+ - Zeiss Cinemizer OLED
 
 Please note that the monitor has to be connected and powered before the Pi is powered because the auto-detection only works at start-up. You can define your (custom) monitor resolution in config.txt statically though to be able to connect the monitor after the Pi is already running.
 
